@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en" class="!scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/logo-mobile.svg"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <!-- Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>Abu Resturant</title>
+  </head>
+
+  <body class="font-productsans bg-cyan-700">
+    <!-- Preloader -->
+
+    <div class="z-50 preload" data-preaload>
+      <div class="circle"></div>
+      <p class="text">
+        <img
+          src="./images/logo.svg"
+          width="160"
+          height="50"
+          alt="Abu - Home"
+          class="-translate-x-2"
+        />
+      </p>
+    </div>
+
+    <!-- navbar & links -->
+    <div
+      class="sticky top-0 z-40 flex flex-row justify-between w-full lg:px-5 shadow-md bg-cyan-700 min-h-20"
+      id="topbar"
+    >
+      <div class="flex flex-row justify-between w-full px-3 lg:px-5">
+        <button
+          class="hidden my-auto text-base text-white transition duration-300 ease-out border-b lg:inline-block border-b-white hover:text-red-300"
+        >
+          BOOK A TABLE
+        </button>
+        <img
+          src="./images/logo-mobile.svg"
+          class="my-auto h-14 lg:h-20 lg:-translate-x-[.5rem]"
+          href="#home"
+        />
+        <div class="flex items-center justify-center gap-3 text-white lg:gap-5">
+          <div class="transition duration-300 ease-out cursor-pointer">
+            <span
+              class="text-red-300 transition duration-300 ease-out hover:text-white"
+              >CZ</span
+            >
+            /
+            <span class="transition duration-300 ease-out hover:text-red-300"
+              >EN</span
+            >
+          </div>
+          <svg
+            id="ham-menu"
+            class="my-auto cursor-pointer Header__toggle-svg"
+            viewbox="0 0 60 40"
+          >
+            <g
+              stroke="#fff"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path id="top-line" d="M10,10 L50,10 Z"></path>
+              <path id="middle-line" d="M10,20 L50,20 Z"></path>
+              <path id="bottom-line" d="M10,30 L50,30 Z"></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- links -->
+    <div
+      id="nav-links"
+      class="sticky z-30 flex flex-row items-center justify-between w-full h-0 px-5 overflow-hidden text-white transition-all duration-300 ease-in-out shadow-md bg-cyan-800 top-20"
+    >
+      <nav class="flex flex-col lg:flex-row lg:justify-around items-center w-full lg:w-[600px] lg:mx-auto gap-5 my-5 text-lg lg:text-base lg:font-light">
+        <a
+          href="#home"
+          class="transition-all duration-300 ease-out hover:text-red-300"
+          >Home</a
+        >
+        <a
+          href="#menu"
+          class="transition-all duration-300 ease-out hover:text-red-300"
+          >Menu</a
+        >
+        <a
+          href="#gallary"
+          class="transition-all duration-300 ease-out hover:text-red-300"
+          >Gallary</a
+        >
+        <a
+          href="#about"
+          class="transition-all duration-300 ease-out hover:text-red-300"
+          >About</a
+        >
+        <a
+          href="#reservation"
+          class="transition-all duration-300 ease-out hover:text-red-300"
+          >Reservation</a
+        >
+        <a
+          href="#contact"
+          class="transition-all duration-300 ease-out hover:text-red-300"
+          >Contact</a
+        >
+        <img src="./images/logo.svg" id="nav-logo" alt="" class="h-20 mt-16 md:hidden">
+      </nav>
+    </div>
+    <!-- Landing page -->
+    <div
+      id="home"
+      class="bg-[url('./images/home-cover.jpg')] bg-cover bg-center w-full h-[610px] lg:h-screen relative"
+    >
+      <div class="absolute inset-0 h-full bg-black opacity-50"></div>
+      <!-- Content -->
+      <div
+        class="relative z-10 flex items-center justify-center h-full text-white"
+      >
+        <div
+          id="hero-txt"
+          class="z-10 mx-2 text-3xl font-light text-center text-white uppercase lg:w-9/12 lg:text-5xl font-sinzel"
+        >
+          <p class="" data-aos-duration="2000" data-aos="fade-up">
+            EXPERIENCE  <br>THE MOST AUTHENTIC MIDDLE EASTERN CUISINE IN PRAGUE
+          </p>
+          
+          <button
+            data-aos-duration="2000"
+            data-aos-delay="1000"
+            data-aos="fade-up"
+            class="mt-5 lg:mt-8 text-xl transition duration-300 ease-out border-b-2 hover:text-red-300 text-cyan-200 font-sinzel font-semibold"
+          >
+            BOOK A TABLE
+          </button>
+        </div>
+      </div>
+      <div
+        class="absolute left-0 text-xl leading-10 text-white -rotate-90 bottom-20 lg:bottom-32 opacity-45"
+      >
+        PRAGUE
+      </div>
+      <a href="#menu-sec">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="white"
+          class="absolute z-10 w-10 h-10 bottom-24 lg:bottom-32 left-14 animate-bounce size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+          />
+        </svg>
+      </a>
+    </div>
+    <!-- Menu section -->
+    <section
+      class="py-24 bg-cyan-700"
+      id="menu"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="container px-4 mx-auto">
+        <h2
+          class="pb-4 mb-5 text-2xl lg:text-4xl text-center text-white uppercase font-extralight font-sinzel"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          Our Menu
+        </h2>
+        <p
+          class="mx-auto mb-14 text-base lg:text-lg leading-relaxed text-center text-white lg:pl-6 lg:w-2/3 font-extralight"
+          
+        >
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quod
+          quidem, dolores obcaecati eligendi id in esse vel. Dicta doloremque
+          tempore vel nam necessitatibus. Odio facere sapiente similique alias
+          blanditiis?
+        </p>
+
+        <div
+          class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 lg:mx-20"
+        >
+          <div
+            id="item1"
+            class="relative flex flex-col items-center justify-center h-40 text-lg text-white uppercase transition-all duration-300 ease-out border border-yellow-300 bg-cyan-700 hover:shadow-xl hover:border-8"
+          >
+            <img src="./images/separator.svg" alt="" class="mb-5" />
+            Main dishes
+            <img
+              src="./images/img-pattern.svg"
+              alt=""
+              class="absolute left-0 w-10 h-full"
+            />
+            <img
+              src="./images/img-pattern.svg"
+              alt=""
+              class="absolute right-0 w-10 h-full"
+            />
+          </div>
+
+          <div
+            id="item2"
+            class="relative flex flex-col items-center justify-center h-40 text-lg text-white uppercase transition-all duration-300 ease-out border border-yellow-300 bg-cyan-700 hover:shadow-xl hover:border-8"
+          >
+            <img src="./images/separator.svg" alt="" class="mb-5" />
+            Desserts
+            <img
+              src="./images/img-pattern.svg"
+              alt=""
+              class="absolute left-0 w-10 h-full"
+            />
+            <img
+              src="./images/img-pattern.svg"
+              alt=""
+              class="absolute right-0 w-10 h-full"
+            />
+          </div>
+
+          <div
+            id="item3"
+            class="relative flex flex-col items-center justify-center h-40 text-lg text-white uppercase transition-all duration-300 ease-out border border-yellow-300 bg-cyan-700 hover:shadow-xl hover:border-8"
+          >
+            <img src="./images/separator.svg" alt="" class="mb-5" />
+            Drinks
+            <img
+              src="./images/img-pattern.svg"
+              alt=""
+              class="absolute left-0 w-10 h-full"
+            />
+            <img
+              src="./images/img-pattern.svg"
+              alt=""
+              class="absolute right-0 w-10 h-full"
+            />
+          </div>
+        </div>
+        <div class="flex items-center justify-center w-full mt-10">
+          <button class="py-5 px-8 uppercase bg-cyan-300">Book a table</button>
+        </div>
+      </div>
+    </section>
+    <!-- Gallary section -->
+    <section class="text-white bg-cyan-700" id="gallary" data-aos="fade-up"
+          data-aos-duration="2000">
+      <div class="container flex flex-wrap px-5 py-24 mx-auto">
+        <div class="flex-row flex-wrap w-full mb-20">
+          <h1
+            class="mx-auto mb-5 text-2xl lg:text-4xl text-center text-white uppercase title-font font-extralight lg:w-1/3 lg:mb-0 font-sinzel"
+            data-aos="fade-up"
+          data-aos-duration="2000"
+          >
+            Our Gallary
+          </h1>
+          <p
+            class="mx-auto mt-10 text-base lg:text-lg leading-relaxed text-center lg:pl-6 lg:w-2/3 font-extralight"
+          >
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+            delectus error voluptatum rerum magnam. Saepe magni in sapiente
+            enim, amet dolorem nam veniam consectetur, nostrum labore impedit
+            aliquid voluptates quo.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-4" data-aos="fade-up"
+          data-aos-duration="2000">
+          <div class="grid gap-4">
+            <div>
+              <img
+                class="h-[400px] w-full rounded-lg object-cover"
+                src="./images/dishes/1.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-[300px] w-full rounded-lg object-cover"
+                src="./images/dishes/2.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-[400px] w-full rounded-lg object-cover"
+                src="./images/dishes/3.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="grid gap-4">
+            <div>
+              <img
+                class="h-[300px] w-full rounded-lg object-cover"
+                src="./images/dishes/6.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-[500px] w-full rounded-lg object-cover"
+                src="./images/dishes/7.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-[300px] w-full rounded-lg object-cover"
+                src="./images/dishes/9.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="grid gap-4">
+            <div>
+              <img
+                class="h-[400px] w-full rounded-lg object-cover"
+                src="./images/dishes/10.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-[300px] w-full rounded-lg object-cover"
+                src="./images/dishes/15.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-[400px] w-full rounded-lg object-cover"
+                src="./images/dishes/20.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="grid gap-4">
+            <div>
+              <img
+                class="h-[300px] w-full rounded-lg object-cover"
+                src="./images/dishes/17.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-[500px] w-full rounded-lg object-cover"
+                src="./images/dishes/19.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-[300px] w-full rounded-lg object-cover"
+                src="./images/dishes/12.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About sections -->
+    <section id="about" class="overflow-x-hidden">
+      <div
+        class="flex flex-col w-screen min-h-screen bg-cyan-700 py-14 lg:flex-row"
+      >
+        <div
+          id="left"
+          class="flex w-full px-10 py-24 text-xl text-white lg:w-1/2"
+        >
+          <img
+            src="./images/img-pattern.svg"
+            alt=""
+            class="hidden w-10 h-full lg:block"
+          />
+          <div class="w-full lg:ml-24 lg:w-2/3 lg:text-justify" data-aos="fade-up"
+          data-aos-duration="2000">
+            <h1 class="mb-5 text-3xl lg:text-6xl uppercase font-extralight" >Restaurant</h1>
+            <p class="text-base" data-aos="fade-up"
+          data-aos-duration="2000">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+              recusandae nam quae, nisi modi id ullam esse provident animi dolor 
+              iste ipsa? Fugit iste veritatis nesciunt deserunt obcaecati,
+              officiis quas!
+            </p>
+            <br />
+            <p class="text-base" data-aos="fade-up"
+          data-aos-duration="2000">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              totam ratione architecto veniam illum! Debitis iure, amet
+              temporibus pariatur minima perspiciatis expedita necessitatibus
+              hic, ipsam autem animi consequatur, nemo iusto.
+            </p>
+            <br /><br />
+            <p
+              class="text-base underline uppercase border-b border-b-yellow-300" data-aos="fade-right"
+          data-aos-duration="2000"
+            >
+              Resturant Menus
+            </p>
+          </div>
+        </div>
+        <div id="right" class="w-full lg:w-1/2" data-aos="fade-left"
+          data-aos-duration="2000">
+          <img src="./images/lunch.jpg" alt="" />
+        </div>
+      </div>
+      <div
+        class="flex flex-col-reverse w-screen min-h-screen lg:flex-row bg-cyan-700 py-14"
+      >
+        <div id="left2" class="w-full lg:w-1/2" data-aos="fade-right"
+          data-aos-duration="2000">
+          <img src="./images/cocktail.jpg" alt="" />
+        </div>
+        <div id="right2" class="w-full px-10 py-24 text-xl text-white lg:w-1/2" data-aos="fade-up"
+          data-aos-duration="2000">
+          <div class="w-full lg:ml-24 lg:w-2/3 lg:text-justify">
+            <h1 class="mb-5 text-3xl lg:text-6xl uppercase font-extralight">The bar</h1>
+            <p class="text-base" data-aos="fade-up"
+          data-aos-duration="2000"> 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+              recusandae nam quae, nisi modi id ullam esse provident animi dolor
+              iste ipsa? Fugit iste veritatis nesciunt deserunt obcaecati,
+              officiis quas!
+            </p>
+            <br />
+            <p class="text-base" data-aos="fade-up"
+          data-aos-duration="2000">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              totam ratione architecto veniam illum! Debitis iure, amet
+              temporibus pariatur minima perspiciatis expedita necessitatibus
+              hic, ipsam autem animi consequatur, nemo iusto.
+            </p>
+            <br /><br />
+            <p
+              class="text-base underline uppercase border-b border-b-yellow-300" data-aos="fade-left"
+          data-aos-duration="2000"
+            >
+              The bar menu
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Reservation and contact section -->
+    <section class="overflow-x-hidden">
+      <div
+        id="reservation"
+        class="flex flex-col w-screen min-h-screen bg-cyan-700 py-14 lg:flex-row"
+      >
+        <div
+          id="left3"
+          class="flex w-full px-10 py-24 text-xl text-white lg:w-1/2" data-aos="fade-left"
+          data-aos-duration="2000"
+        >
+          <img
+            src="./images/img-pattern.svg"
+            alt=""
+            class="hidden w-10 h-full lg:block"
+          />
+          <div class="w-full lg:ml-24 lg:w-2/3 lg:text-justify">
+            <h1 class="mb-5 text-3xl lg:text-6xl uppercase font-extralight" data-aos="fade-up"
+          data-aos-duration="2000">
+              Reservations
+            </h1>
+            <p class="text-base" data-aos="fade-up"
+          data-aos-duration="2000">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+              recusandae nam quae, nisi modi id ullam esse provident animi dolor
+              iste ipsa? Fugit iste veritatis nesciunt deserunt obcaecati,
+              officiis quas!
+            </p>
+            <br />
+            <p class="text-base" data-aos="fade-up"
+          data-aos-duration="2000">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              totam ratione architecto veniam illum! Debitis iure, amet
+              temporibus pariatur minima perspiciatis expedita necessitatibus
+              hic, ipsam autem animi consequatur, nemo iusto.
+            </p>
+            <br /><br />
+            <p
+              class="text-base underline uppercase border-b border-b-yellow-300" data-aos="fade-right"
+          data-aos-duration="2000"
+            >
+              Book a table
+            </p>
+          </div>
+        </div>
+        <div  class="w-full lg:w-1/2" data-aos="fade-left"
+          data-aos-duration="2000">
+          <img src="./images/booking.jpg" alt="" />
+        </div>
+      </div>
+      <div
+        class="flex flex-col-reverse w-screen min-h-screen lg:flex-row bg-cyan-700 py-14"
+      >
+        <div id="left4" class="w-full lg:w-1/2" data-aos="fade-right"
+          data-aos-duration="2000">
+          <img src="./images/contact.jpg" alt="" class="object-contain"/>
+        </div>
+        <div id="contact" class="w-full px-10 py-24 text-xl text-white lg:w-1/2">
+          <div class="w-full lg:ml-24 lg:w-2/3 lg:text-justify">
+            <h1 class="mb-5 text-3xl lg:text-6xl uppercase font-extralight" data-aos="fade-up"
+          data-aos-duration="2000">Contact us</h1>
+            <p class="text-base" data-aos="fade-up"
+          data-aos-duration="2000">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+              recusandae nam quae, nisi modi id ullam esse provident animi dolor
+              iste ipsa? Fugit iste veritatis nesciunt deserunt obcaecati,
+              officiis quas!
+            </p>
+            <br />
+            <p class="text-base" data-aos="fade-up"
+          data-aos-duration="2000">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              totam ratione architecto veniam illum! Debitis iure, amet
+              temporibus pariatur minima perspiciatis expedita necessitatibus
+              hic, ipsam autem animi consequatur, nemo iusto.
+            </p>
+            <br /><br />
+            <p
+              class="text-base underline uppercase border-b border-b-yellow-300" data-aos="fade-left"
+          data-aos-duration="2000"
+            >
+              call us
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer section -->
+    <footer class="text-white bg-cyan-700">
+      <div
+        class="container flex flex-col items-center px-5 py-8 mx-auto sm:flex-row"
+      >
+        <a
+          class="flex flex-col items-center justify-center font-medium text-white lg:flex-row title-font md:justify-start"
+        >
+          <img src="./images/logo.svg" alt="" class="w-24" />
+          <span class="block mx-auto text-xl text-center lg:ml-3"
+            >Abu Resturant</span
+          >
+        </a>
+        <p
+          class="mt-4 text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0"
+        >
+          © 2024 Abu Resturant —
+          <a
+            href="#"
+            class="text-white"
+            rel="noopener noreferrer"
+            target="_blank"
+            >@aveekpatra</a
+          >
+        </p>
+        <span
+          class="inline-flex justify-center mt-4 sm:ml-auto sm:mt-0 sm:justify-start"
+        >
+          <a class="text-white">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-white">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-white">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path
+                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-white">
+            <svg
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="0"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+              ></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+  </body>
+  <script defer src="./main.js"></script>
+  <script defer>
+    AOS.init();
+  </script>
+</html>

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <title>Abu Resturant</title>
+  </head>
+
+  <body class="font-productsans scroll-smooth">
+    <!-- Preloader -->
+
+    <div class="z-50 preload" data-preaload>
+      <div class="circle"></div>
+      <p class="text">
+        <img
+          src="./images/logo.svg"
+          width="160"
+          height="50"
+          alt="Abu - Home"
+          class="-translate-x-2"
+        />
+      </p>
+    </div>
+
+    <div
+      class="top-0 z-40 sticky flex flex-row justify-between bg-cyan-700 px-5 w-full h-20 border-b border-b-yellow-300"
+      id="topbar"
+    >
+      <button
+        class="lg:inline-block hidden my-auto border-b border-b-white text-sm text-white"
+      >
+        BOOK A TABLE
+      </button>
+      <img
+        src="./images/logo-mobile.svg"
+        class="my-auto h-14 lg:h-20 lg:-translate-x-[3.5rem]"
+      />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="white"
+        class="my-auto size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+    </div>
+    <!-- Landing page -->
+    <div
+      class="bg-[url('./images/homepage-1.jpg')] bg-cover bg-center w-full h-[610px] lg:h-screen relative"
+    >
+      <div class="inset-0 bg-black opacity-50 h-full absolute"></div>
+      <!-- Content -->
+      <div
+        class="relative z-10 flex justify-center items-center h-full text-white"
+      >
+        <div
+          class="z-10 lg:w-9/12 text-3xl text-center text-white lg:text-7xl font-extralight mx-2"
+        >
+          EXPERIENCE AUTHENTIC MIDDLE EASTERN CUISINE
+          <br /><br />
+          <button
+            class="hover:border-b-yellow-300 border-b-2 text-sky-200 text-xl"
+          >
+            BOOK A TABLE
+          </button>
+        </div>
+      </div>
+      <div
+        class="bottom-20 lg:bottom-32 left-0 absolute opacity-45 text-white text-xl leading-10 -rotate-90"
+      >
+        PRAGUE
+      </div>
+      <a href="#menu-sec">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="white"
+          class="bottom-24 lg:bottom-32 left-40 lg:left-14 z-10 absolute w-10 h-10 animate-bounce size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+          />
+        </svg>
+      </a>
+    </div>
+    <!-- Menu section -->
+    <section class="bg-cyan-700 py-24" id="menu-sec">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-6xl font-extralight text-center mb-12 text-white uppercase pb-4"
+        >
+          Menu
+        </h2>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:mx-20"
+        >
+          <div
+            id="item1"
+            class="h-40 bg-cyan-800 flex justify-center items-center flex-col text-white border-yellow-300 border hover:shadow-lg relative"
+          >
+            <img src="./images/features-icon-2.png" alt="" class="mb-5" />
+            Starters & Main dishes
+            <img
+              src="./images/img-pattern.svg"
+              alt=""
+              class="h-full absolute left-0 w-10"
+            />
+            <img
+              src="./images/img-pattern.svg"
+              alt=""
+              class="h-full absolute right-0 w-10"
+            />
+          </div>
+
+          <div
+            id="item2"
+            class="h-40 bg-cyan-800 flex justify-center items-center flex-col text-white border-yellow-300 border hover:shadow-lg relative"
+          >
+            <img src="./images/features-icon-2.png" alt="" class="mb-5" />
+            Desserts
+            <img
+              src="./images/img-pattern.svg"
+              alt=""
+              class="h-full absolute left-0 w-10"
+            />
+            <img
+              src="./images/img-pattern.svg"
+              alt=""
+              class="h-full absolute right-0 w-10"
+            />
+          </div>
+
+          <div
+            id="item3"
+            class="h-40 bg-cyan-800 flex justify-center items-center flex-col text-white border-yellow-300 border hover:shadow-lg relative"
+          >
+            <img src="./images/features-icon-2.png" alt="" class="mb-5" />
+            Drinks
+            <img
+              src="./images/img-pattern.svg"
+              alt=""
+              class="h-full absolute left-0 w-10"
+            />
+            <img
+              src="./images/img-pattern.svg"
+              alt=""
+              class="h-full absolute right-0 w-10"
+            />
+          </div>
+        </div>
+        <div class="w-full flex items-center justify-center mt-10">
+          <button class="uppercase bg-cyan-300 p-5">Get the full menu</button>
+        </div>
+      </div>
+    </section>
+    <!-- About sections -->
+    <section>
+      <div
+        class="flex bg-cyan-700 py-14 w-screen min-h-screen flex-col lg:flex-row"
+      >
+        <div
+          id="left"
+          class="px-10 py-24 lg:w-1/2 text-white text-xl flex w-full"
+        >
+          <img
+            src="./images/img-pattern.svg"
+            alt=""
+            class="w-10 h-full hidden lg:block"
+          />
+          <div class="lg:ml-24 lg:w-2/3 w-full lg:text-justify">
+            <h1 class="mb-5 font-extralight text-6xl uppercase">About us</h1>
+            <p class="text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+              recusandae nam quae, nisi modi id ullam esse provident animi dolor
+              iste ipsa? Fugit iste veritatis nesciunt deserunt obcaecati,
+              officiis quas!
+            </p>
+            <br />
+            <p class="text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              totam ratione architecto veniam illum! Debitis iure, amet
+              temporibus pariatur minima perspiciatis expedita necessitatibus
+              hic, ipsam autem animi consequatur, nemo iusto.
+            </p>
+            <br /><br />
+            <p
+              class="text-base uppercase border-b-yellow-300 border-b underline"
+            >
+              Resturant Menus
+            </p>
+          </div>
+        </div>
+        <div id="right" class="w-full lg:w-1/2">
+          <img src="./images/lunch.jpg" alt="" />
+        </div>
+      </div>
+      <div
+        class="lg:flex-row bg-cyan-700 py-14 w-screen min-h-screen flex-col flex"
+      >
+        <div id="left2" class="w-full lg:w-1/2">
+          <img src="./images/lunch-2.jpg" alt="" />
+        </div>
+        <div id="right2" class="px-10 py-24 lg:w-1/2 text-white text-xl w-full">
+          <div class="lg:ml-24 lg:w-2/3 w-full lg:text-justify">
+            <h1 class="mb-5 font-extralight text-6xl uppercase">About us</h1>
+            <p class="text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+              recusandae nam quae, nisi modi id ullam esse provident animi dolor
+              iste ipsa? Fugit iste veritatis nesciunt deserunt obcaecati,
+              officiis quas!
+            </p>
+            <br />
+            <p class="text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              totam ratione architecto veniam illum! Debitis iure, amet
+              temporibus pariatur minima perspiciatis expedita necessitatibus
+              hic, ipsam autem animi consequatur, nemo iusto.
+            </p>
+            <br /><br />
+            <p
+              class="text-base uppercase border-b-yellow-300 border-b underline"
+            >
+              Resturant Menus
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallary section -->
+    <section class="text-white bg-cyan-700">
+      <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <div class="flex w-full mb-20 flex-wrap">
+          <h1
+            class="sm:text-3xl text-4xl title-font text-white font-extralight lg:w-1/3 lg:mb-0 mb-4 uppercase underline underline-offset-1"
+          >
+            Our Gllary
+          </h1>
+          <p
+            class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-lg font-extralight"
+          >
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+            delectus error voluptatum rerum magnam. Saepe magni in sapiente
+            enim, amet dolorem nam veniam consectetur, nostrum labore impedit
+            aliquid voluptates quo.
+          </p>
+        </div>
+        <div class="flex flex-wrap md:-m-2 -m-1">
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                class="w-full object-cover h-full object-center block border-yellow-300 border"
+                src="./images/cocktail.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                class="w-full object-cover h-full object-center block border-yellow-300 border"
+                src="./images/event-1.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-full">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block border-yellow-300 border"
+                src="./images/event-2.jpg"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-full">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block border-yellow-300 border"
+                src="./images/event-3.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                class="w-full object-cover h-full object-center block border-yellow-300 border"
+                src="./images/hero-slider-1.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                class="w-full object-cover h-full object-center block border-yellow-300 border"
+                src="./images/hero-slider-3.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Reservation and contact section -->
+    <section>
+      <div
+        class="flex bg-cyan-700 py-14 w-screen min-h-screen flex-col lg:flex-row"
+      >
+        <div
+          id="left3"
+          class="px-10 py-24 lg:w-1/2 text-white text-xl flex w-full"
+        >
+          <img
+            src="./images/img-pattern.svg"
+            alt=""
+            class="w-10 h-full hidden lg:block"
+          />
+          <div class="lg:ml-24 lg:w-2/3 w-full lg:text-justify">
+            <h1 class="mb-5 font-extralight text-6xl uppercase">About us</h1>
+            <p class="text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+              recusandae nam quae, nisi modi id ullam esse provident animi dolor
+              iste ipsa? Fugit iste veritatis nesciunt deserunt obcaecati,
+              officiis quas!
+            </p>
+            <br />
+            <p class="text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              totam ratione architecto veniam illum! Debitis iure, amet
+              temporibus pariatur minima perspiciatis expedita necessitatibus
+              hic, ipsam autem animi consequatur, nemo iusto.
+            </p>
+            <br /><br />
+            <p
+              class="text-base uppercase border-b-yellow-300 border-b underline"
+            >
+              Resturant Menus
+            </p>
+          </div>
+        </div>
+        <div id="right3" class="w-full lg:w-1/2">
+          <img src="./images/lunch.jpg" alt="" />
+        </div>
+      </div>
+      <div
+        class="lg:flex-row bg-cyan-700 py-14 w-screen min-h-screen flex-col flex"
+      >
+        <div id="left4" class="w-full lg:w-1/2">
+          <img src="./images/lunch-2.jpg" alt="" />
+        </div>
+        <div id="right4" class="px-10 py-24 lg:w-1/2 text-white text-xl w-full">
+          <div class="lg:ml-24 lg:w-2/3 w-full lg:text-justify">
+            <h1 class="mb-5 font-extralight text-6xl uppercase">About us</h1>
+            <p class="text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+              recusandae nam quae, nisi modi id ullam esse provident animi dolor
+              iste ipsa? Fugit iste veritatis nesciunt deserunt obcaecati,
+              officiis quas!
+            </p>
+            <br />
+            <p class="text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              totam ratione architecto veniam illum! Debitis iure, amet
+              temporibus pariatur minima perspiciatis expedita necessitatibus
+              hic, ipsam autem animi consequatur, nemo iusto.
+            </p>
+            <br /><br />
+            <p
+              class="text-base uppercase border-b-yellow-300 border-b underline"
+            >
+              Resturant Menus
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer section -->
+    <footer class="text-white bg-cyan-700">
+      <div
+        class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+      >
+        <a
+          class="flex-col lg:flex-row flex title-font font-medium items-center md:justify-start justify-center text-white"
+        >
+          <img src="./images/logo.svg" alt="" class="w-24" />
+          <span class="lg:ml-3 text-xl mx-auto text-center block"
+            >Abu Resturant</span
+          >
+        </a>
+        <p
+          class="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+        >
+          © 2024 Abu Resturant —
+          <a
+            href="#"
+            class="text-white"
+            rel="noopener noreferrer"
+            target="_blank"
+            >@aveekpatra</a
+          >
+        </p>
+        <span
+          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+        >
+          <a class="text-white">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-white">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-white">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path
+                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-white">
+            <svg
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="0"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+              ></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+  </body>
+  <script defer src="./main.js"></script>
+</html>
