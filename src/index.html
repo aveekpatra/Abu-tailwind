@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="!scroll-smooth">
+<html lang="en" class="md:!scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -45,7 +45,7 @@
     <title>Abu Resturant</title>
   </head>
 
-  <body class="font-productsans bg-cyan-700">
+  <body class="font-productsans bg-cyan-700" id="home">
     <!-- Preloader -->
 
     <div class="z-50 preload" data-preaload>
@@ -63,7 +63,7 @@
 
     <!-- navbar & links -->
     <div
-      class="sticky top-0 z-40 flex flex-row justify-between w-full lg:px-5 shadow-md bg-cyan-700 min-h-20"
+      class="sticky top-0 z-40 flex flex-row justify-between w-full shadow-md lg:px-5 bg-cyan-700 min-h-20"
       id="topbar"
     >
       <div class="flex flex-row justify-between w-full px-3 lg:px-5">
@@ -75,7 +75,7 @@
         <img
           src="./images/logo-mobile.svg"
           class="my-auto h-14 lg:h-20 lg:-translate-x-[.5rem]"
-          href="#home"
+          id="logo-main"
         />
         <div class="flex items-center justify-center gap-3 text-white lg:gap-5">
           <div class="transition duration-300 ease-out cursor-pointer">
@@ -110,9 +110,11 @@
     <!-- links -->
     <div
       id="nav-links"
-      class="sticky z-30 flex flex-row items-center justify-between w-full h-0 px-5 overflow-hidden text-white transition-all duration-300 ease-in-out shadow-md bg-cyan-800 top-20"
+      class="fixed z-30 flex flex-row items-center justify-between w-full h-0 px-5 overflow-hidden text-white transition-all duration-300 ease-in-out shadow-md md:sticky bg-cyan-800 top-20"
     >
-      <nav class="flex flex-col lg:flex-row lg:justify-around items-center w-full lg:w-[600px] lg:mx-auto gap-5 my-5 text-lg lg:text-base lg:font-light">
+      <nav
+        class="flex flex-col lg:flex-row lg:justify-around items-center w-full lg:w-[600px] lg:mx-auto gap-5 my-5 text-lg lg:text-base lg:font-light"
+      >
         <a
           href="#home"
           class="transition-all duration-300 ease-out hover:text-red-300"
@@ -143,12 +145,83 @@
           class="transition-all duration-300 ease-out hover:text-red-300"
           >Contact</a
         >
-        <img src="./images/logo.svg" id="nav-logo" alt="" class="h-20 mt-16 md:hidden">
+        <div class="md:hidden">
+          <img
+            src="./images/logo.svg"
+            id="nav-logo"
+            alt=""
+            class="h-20 mt-14 md:hidden"
+          />
+          <span
+            class="inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start md:hidden"
+          >
+            <a class="text-white">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-white">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-white">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-white">
+              <svg
+                fill="currentColor"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="0"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                ></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
       </nav>
     </div>
     <!-- Landing page -->
     <div
-      id="home"
       class="bg-[url('./images/home-cover.jpg')] bg-cover bg-center w-full h-[610px] lg:h-screen relative"
     >
       <div class="absolute inset-0 h-full bg-black opacity-50"></div>
@@ -161,14 +234,14 @@
           class="z-10 mx-2 text-3xl font-light text-center text-white uppercase lg:w-9/12 lg:text-5xl font-sinzel"
         >
           <p class="" data-aos-duration="2000" data-aos="fade-up">
-            EXPERIENCE  <br>THE MOST AUTHENTIC MIDDLE EASTERN CUISINE IN PRAGUE
+            EXPERIENCE <br />THE MOST AUTHENTIC MIDDLE EASTERN CUISINE IN PRAGUE
           </p>
-          
+
           <button
             data-aos-duration="2000"
             data-aos-delay="1000"
             data-aos="fade-up"
-            class="mt-5 lg:mt-8 text-xl transition duration-300 ease-out border-b-2 hover:text-red-300 text-cyan-200 font-sinzel font-semibold"
+            class="md:hidden mt-5 text-xl font-semibold transition duration-300 ease-out border-b-2 lg:mt-8 hover:text-red-300 text-cyan-200 font-sinzel"
           >
             BOOK A TABLE
           </button>
@@ -205,20 +278,18 @@
     >
       <div class="container px-4 mx-auto">
         <h2
-          class="pb-4 mb-5 text-2xl lg:text-4xl text-center text-white uppercase font-extralight font-sinzel"
+          class="pb-4 mb-5 text-2xl text-center text-white uppercase lg:text-4xl font-extralight font-sinzel"
           data-aos="fade-up"
           data-aos-duration="2000"
         >
           Our Menu
         </h2>
         <p
-          class="mx-auto mb-14 text-base lg:text-lg leading-relaxed text-center text-white lg:pl-6 lg:w-2/3 font-extralight"
-          
+          class="mx-auto text-base leading-relaxed text-center text-white mb-14 md:text-lg lg:pl-6 lg:w-2/3 font-extralight"
         >
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quod
-          quidem, dolores obcaecati eligendi id in esse vel. Dicta doloremque
-          tempore vel nam necessitatibus. Odio facere sapiente similique alias
-          blanditiis?
+          Experience the rich flavors of the Middle East with our authentic
+          dishes, thoughtfully crafted using traditional recipes and the
+          freshest ingredients.
         </p>
 
         <div
@@ -226,9 +297,9 @@
         >
           <div
             id="item1"
-            class="relative flex flex-col items-center justify-center h-40 text-lg text-white uppercase transition-all duration-300 ease-out border border-yellow-300 bg-cyan-700 hover:shadow-xl hover:border-8"
+            class="relative flex flex-col items-center justify-center text-lg text-white uppercase transition-all duration-300 ease-out border border-yellow-300 h-60 bg-cyan-700 hover:shadow-xl hover:border-8"
           >
-            <img src="./images/separator.svg" alt="" class="mb-5" />
+            <img src="./images/separator.svg" alt="" class="w-1/2 mb-5" />
             Main dishes
             <img
               src="./images/img-pattern.svg"
@@ -244,9 +315,9 @@
 
           <div
             id="item2"
-            class="relative flex flex-col items-center justify-center h-40 text-lg text-white uppercase transition-all duration-300 ease-out border border-yellow-300 bg-cyan-700 hover:shadow-xl hover:border-8"
+            class="relative flex flex-col items-center justify-center text-lg text-white uppercase transition-all duration-300 ease-out border border-yellow-300 h-60 bg-cyan-700 hover:shadow-xl hover:border-8"
           >
-            <img src="./images/separator.svg" alt="" class="mb-5" />
+            <img src="./images/separator.svg" alt="" class="w-1/2 mb-5" />
             Desserts
             <img
               src="./images/img-pattern.svg"
@@ -262,9 +333,9 @@
 
           <div
             id="item3"
-            class="relative flex flex-col items-center justify-center h-40 text-lg text-white uppercase transition-all duration-300 ease-out border border-yellow-300 bg-cyan-700 hover:shadow-xl hover:border-8"
+            class="relative flex flex-col items-center justify-center text-lg text-white uppercase transition-all duration-300 ease-out border border-yellow-300 h-60 bg-cyan-700 hover:shadow-xl hover:border-8"
           >
-            <img src="./images/separator.svg" alt="" class="mb-5" />
+            <img src="./images/separator.svg" alt="" class="w-1/2 mb-5" />
             Drinks
             <img
               src="./images/img-pattern.svg"
@@ -279,131 +350,87 @@
           </div>
         </div>
         <div class="flex items-center justify-center w-full mt-10">
-          <button class="py-5 px-8 uppercase bg-cyan-300">Book a table</button>
+          <button class="px-8 py-5 uppercase bg-cyan-300">Book a table</button>
         </div>
       </div>
     </section>
     <!-- Gallary section -->
-    <section class="text-white bg-cyan-700" id="gallary" data-aos="fade-up"
-          data-aos-duration="2000">
+    <section
+      class="text-white bg-cyan-700"
+      id="gallary"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <div class="container flex flex-wrap px-5 py-24 mx-auto">
         <div class="flex-row flex-wrap w-full mb-20">
           <h1
-            class="mx-auto mb-5 text-2xl lg:text-4xl text-center text-white uppercase title-font font-extralight lg:w-1/3 lg:mb-0 font-sinzel"
+            class="mx-auto mb-5 text-2xl text-center text-white uppercase lg:text-4xl title-font font-extralight lg:w-1/3 lg:mb-0 font-sinzel"
             data-aos="fade-up"
-          data-aos-duration="2000"
+            data-aos-duration="2000"
           >
             Our Gallary
           </h1>
           <p
-            class="mx-auto mt-10 text-base lg:text-lg leading-relaxed text-center lg:pl-6 lg:w-2/3 font-extralight"
+            class="mx-auto mt-10 text-base leading-relaxed text-center md:text-lg lg:pl-6 lg:w-2/3 font-extralight"
           >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
-            delectus error voluptatum rerum magnam. Saepe magni in sapiente
-            enim, amet dolorem nam veniam consectetur, nostrum labore impedit
-            aliquid voluptates quo.
+            Explore our gallery and immerse yourself in the vibrant colors and
+            authentic atmosphere of our Middle Eastern dishes and dining
+            experience.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 gap-4 md:grid-cols-4" data-aos="fade-up"
-          data-aos-duration="2000">
-          <div class="grid gap-4">
-            <div>
-              <img
-                class="h-[400px] w-full rounded-lg object-cover"
-                src="./images/dishes/1.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                class="h-[300px] w-full rounded-lg object-cover"
-                src="./images/dishes/2.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                class="h-[400px] w-full rounded-lg object-cover"
-                src="./images/dishes/3.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="grid gap-4">
-            <div>
-              <img
-                class="h-[300px] w-full rounded-lg object-cover"
-                src="./images/dishes/6.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                class="h-[500px] w-full rounded-lg object-cover"
-                src="./images/dishes/7.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                class="h-[300px] w-full rounded-lg object-cover"
-                src="./images/dishes/9.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="grid gap-4">
-            <div>
-              <img
-                class="h-[400px] w-full rounded-lg object-cover"
-                src="./images/dishes/10.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                class="h-[300px] w-full rounded-lg object-cover"
-                src="./images/dishes/15.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                class="h-[400px] w-full rounded-lg object-cover"
-                src="./images/dishes/20.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="grid gap-4">
-            <div>
-              <img
-                class="h-[300px] w-full rounded-lg object-cover"
-                src="./images/dishes/17.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                class="h-[500px] w-full rounded-lg object-cover"
-                src="./images/dishes/19.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                class="h-[300px] w-full rounded-lg object-cover"
-                src="./images/dishes/12.jpg"
-                alt=""
-              />
-            </div>
-          </div>
+        <div
+          class="grid gap-5 lg:grid-cols-3 lg:gap-10 lg:px-10"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <img
+            src="./images/dishes/1.jpg"
+            alt=""
+            class="object-cover lg:h-[600px] lg:w-[1000px]"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          />
+          <img
+            src="./images/dishes/7.jpg"
+            alt=""
+            class="object-cover lg:h-[600px] lg:w-[1000px]"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          />
+          <img
+            src="./images/dishes/9.jpg"
+            alt=""
+            class="object-cover lg:h-[600px] lg:w-[1000px]"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          />
+          <img
+            src="./images/dishes/15.jpg"
+            alt=""
+            class="object-cover lg:h-[600px] lg:w-[1000px]"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          />
+          <img
+            src="./images/dishes/20.jpg"
+            alt=""
+            class="object-cover lg:h-[600px] lg:w-[1000px]"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          />
+          <img
+            src="./images/dishes/17.jpg"
+            alt=""
+            class="object-cover lg:h-[600px] lg:w-[1000px]"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          />
         </div>
       </div>
     </section>
     <!-- About sections -->
-    <section id="about" class="overflow-x-hidden">
+    <section id="about" class="relative overflow-x-hidden">
       <div
         class="flex flex-col w-screen min-h-screen bg-cyan-700 py-14 lg:flex-row"
       >
@@ -412,72 +439,107 @@
           class="flex w-full px-10 py-24 text-xl text-white lg:w-1/2"
         >
           <img
-            src="./images/img-pattern.svg"
+            src="./images/shape-5.png"
             alt=""
-            class="hidden w-10 h-full lg:block"
+            class="hidden w-[500px] lg:block absolute -translate-y-28 opacity-20"
           />
-          <div class="w-full lg:ml-24 lg:w-2/3 lg:text-justify" data-aos="fade-up"
-          data-aos-duration="2000">
-            <h1 class="mb-5 text-3xl lg:text-6xl uppercase font-extralight" >Restaurant</h1>
-            <p class="text-base" data-aos="fade-up"
-          data-aos-duration="2000">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
-              recusandae nam quae, nisi modi id ullam esse provident animi dolor 
-              iste ipsa? Fugit iste veritatis nesciunt deserunt obcaecati,
-              officiis quas!
+          <div
+            class="w-full lg:ml-24 lg:w-2/3 lg:text-justify"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <h1 class="mb-5 text-3xl uppercase lg:text-6xl font-extralight">
+              Restaurant
+            </h1>
+            <p class="text-base" data-aos="fade-up" data-aos-duration="2000">
+              Welcome to Abu, a culinary journey into the heart of the Middle
+              East, right here in Prague. We take pride in serving a diverse
+              menu inspired by the rich traditions of Lebanese, Turkish, and
+              Iraqi cuisines. Our dishes are prepared using authentic recipes
+              passed down through generations, blending aromatic spices and
+              fresh ingredients to create an unforgettable dining experience.
             </p>
             <br />
-            <p class="text-base" data-aos="fade-up"
-          data-aos-duration="2000">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              totam ratione architecto veniam illum! Debitis iure, amet
-              temporibus pariatur minima perspiciatis expedita necessitatibus
-              hic, ipsam autem animi consequatur, nemo iusto.
+            <p class="text-base" data-aos="fade-up" data-aos-duration="2000">
+              At Abu, we aim to transport you to a world of warm hospitality,
+              vibrant flavors, and timeless traditions. Whether you’re joining
+              us for a casual meal, a family gathering, or a special
+              celebration, we promise a truly unique and flavorful experience.
             </p>
             <br /><br />
             <p
-              class="text-base underline uppercase border-b border-b-yellow-300" data-aos="fade-right"
-          data-aos-duration="2000"
+              class="text-base underline uppercase border-b border-b-yellow-300"
+              data-aos="fade-right"
+              data-aos-duration="2000"
             >
-              Resturant Menus
+              Our Resturant Menu
             </p>
           </div>
         </div>
-        <div id="right" class="w-full lg:w-1/2" data-aos="fade-left"
-          data-aos-duration="2000">
-          <img src="./images/lunch.jpg" alt="" />
+        <div
+          id="right"
+          class="w-full lg:w-1/2"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
+          <img
+            src="./images/dishes/21.jpg"
+            alt=""
+            class="object-cover md:h-screen"
+          />
         </div>
       </div>
       <div
         class="flex flex-col-reverse w-screen min-h-screen lg:flex-row bg-cyan-700 py-14"
       >
-        <div id="left2" class="w-full lg:w-1/2" data-aos="fade-right"
-          data-aos-duration="2000">
-          <img src="./images/cocktail.jpg" alt="" />
+        <div
+          id="left2"
+          class="w-full lg:w-1/2"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          <img
+            src="./images/cocktail.jpg"
+            alt=""
+            class="object-cover md:h-screen"
+          />
         </div>
-        <div id="right2" class="w-full px-10 py-24 text-xl text-white lg:w-1/2" data-aos="fade-up"
-          data-aos-duration="2000">
+        <div
+          id="right2"
+          class="w-full px-10 py-24 text-xl text-white lg:w-1/2"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <img
+            src="./images/shape-2.png"
+            alt=""
+            class="hidden w-[200px] lg:block absolute -translate-y-20 opacity-30 -z-20 right-10"
+          />
           <div class="w-full lg:ml-24 lg:w-2/3 lg:text-justify">
-            <h1 class="mb-5 text-3xl lg:text-6xl uppercase font-extralight">The bar</h1>
-            <p class="text-base" data-aos="fade-up"
-          data-aos-duration="2000"> 
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
-              recusandae nam quae, nisi modi id ullam esse provident animi dolor
-              iste ipsa? Fugit iste veritatis nesciunt deserunt obcaecati,
-              officiis quas!
+            <h1 class="mb-5 text-3xl uppercase lg:text-6xl font-extralight">
+              The bar
+            </h1>
+            <p class="text-base" data-aos="fade-up" data-aos-duration="2000">
+              Welcome to Abu Bar, where the spirit of the Middle East meets the
+              vibrant nightlife of Prague. Our bar offers an exquisite selection
+              of handcrafted cocktails, premium wines, and traditional Middle
+              Eastern beverages, all carefully curated to complement our
+              cuisine. Enjoy classic favorites like Arak, Turkish Raki, or our
+              signature cocktails infused with exotic spices and flavors.
             </p>
             <br />
-            <p class="text-base" data-aos="fade-up"
-          data-aos-duration="2000">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              totam ratione architecto veniam illum! Debitis iure, amet
-              temporibus pariatur minima perspiciatis expedita necessitatibus
-              hic, ipsam autem animi consequatur, nemo iusto.
+            <p class="text-base" data-aos="fade-up" data-aos-duration="2000">
+              With a cozy, stylish ambiance, Abu Bar is the perfect place to
+              unwind, socialize, or start your evening. Whether you’re enjoying
+              a drink before dinner, gathering with friends, or looking for a
+              unique night out, we offer an unforgettable experience with every
+              sip.
             </p>
             <br /><br />
             <p
-              class="text-base underline uppercase border-b border-b-yellow-300" data-aos="fade-left"
-          data-aos-duration="2000"
+              class="text-base underline uppercase border-b border-b-yellow-300"
+              data-aos="fade-left"
+              data-aos-duration="2000"
             >
               The bar menu
             </p>
@@ -486,85 +548,132 @@
       </div>
     </section>
     <!-- Reservation and contact section -->
-    <section class="overflow-x-hidden">
+    <section class="relative overflow-x-hidden">
       <div
         id="reservation"
         class="flex flex-col w-screen min-h-screen bg-cyan-700 py-14 lg:flex-row"
       >
         <div
           id="left3"
-          class="flex w-full px-10 py-24 text-xl text-white lg:w-1/2" data-aos="fade-left"
+          class="flex w-full px-10 py-24 text-xl text-white lg:w-1/2"
+          data-aos="fade-left"
           data-aos-duration="2000"
         >
           <img
-            src="./images/img-pattern.svg"
+            src="./images/shape-5.png"
             alt=""
-            class="hidden w-10 h-full lg:block"
+            class="hidden w-[500px] lg:block absolute -translate-y-28 opacity-30"
           />
           <div class="w-full lg:ml-24 lg:w-2/3 lg:text-justify">
-            <h1 class="mb-5 text-3xl lg:text-6xl uppercase font-extralight" data-aos="fade-up"
-          data-aos-duration="2000">
+            <h1
+              class="mb-5 text-3xl uppercase lg:text-6xl font-extralight"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               Reservations
             </h1>
-            <p class="text-base" data-aos="fade-up"
-          data-aos-duration="2000">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
-              recusandae nam quae, nisi modi id ullam esse provident animi dolor
-              iste ipsa? Fugit iste veritatis nesciunt deserunt obcaecati,
-              officiis quas!
-            </p>
-            <br />
-            <p class="text-base" data-aos="fade-up"
-          data-aos-duration="2000">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              totam ratione architecto veniam illum! Debitis iure, amet
-              temporibus pariatur minima perspiciatis expedita necessitatibus
-              hic, ipsam autem animi consequatur, nemo iusto.
-            </p>
-            <br /><br />
-            <p
-              class="text-base underline uppercase border-b border-b-yellow-300" data-aos="fade-right"
-          data-aos-duration="2000"
-            >
-              Book a table
-            </p>
+            <div class="text-base" data-aos="fade-up" data-aos-duration="2000">
+              <div class="mb-5">
+                <span>For enquiries, please call</span> <br />
+                020 3848 6710
+              </div>
+              <p class="mb-5">
+                <span>Email our reservations team</span> <br />
+
+                <span>booking@restaurant.com</span>
+              </p>
+
+              <div class="text-sm">
+                <div class="mb-1 text-lg uppercase">Opening times</div>
+                MONDAY 17:30 – 00:00 <br />
+                TUESDAY 12:30 – 15:00 / 17:30 – 00:00
+                <br />
+                WEDNESDAY 12:30 – 15:00 / 17:30 – 00:00 <br />
+                THURSDAY 12:30 – 15:00 / 17:30 – 01:00 <br />
+                FRIDAY 12:30 – 15:00 / 17:30 – 01:00 <br />
+                SATURDAY 12:30 – 15:00 / 17:30 – 01:00 <br />
+                SUNDAY 12:30 – 15:00 /17:30 – 21:00
+              </div>
+              <br />
+              <span>Dress code</span><br /><br />
+              <span>
+                Please note our dress code is elegant casual. Sportwear,
+                beachwear, shorts and caps are not permitted.</span
+              >
+              <br /><br />
+
+              <p
+                class="text-base underline uppercase border-b border-b-yellow-300"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
+                Book a table
+              </p>
+            </div>
           </div>
         </div>
-        <div  class="w-full lg:w-1/2" data-aos="fade-left"
-          data-aos-duration="2000">
-          <img src="./images/booking.jpg" alt="" />
+        <div
+          class="w-full lg:w-1/2"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
+          <img
+            src="./images/booking.jpg"
+            alt=""
+            class="object-cover md:h-screen"
+          />
         </div>
       </div>
       <div
         class="flex flex-col-reverse w-screen min-h-screen lg:flex-row bg-cyan-700 py-14"
       >
-        <div id="left4" class="w-full lg:w-1/2" data-aos="fade-right"
-          data-aos-duration="2000">
-          <img src="./images/contact.jpg" alt="" class="object-contain"/>
+        <div
+          id="left4"
+          class="w-full lg:w-1/2"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          <img
+            src="./images/contact.jpg"
+            alt=""
+            class="object-cover md:h-screen"
+          />
         </div>
-        <div id="contact" class="w-full px-10 py-24 text-xl text-white lg:w-1/2">
+        <div
+          id="contact"
+          class="w-full px-10 py-24 text-xl text-white lg:w-1/2"
+        >
           <div class="w-full lg:ml-24 lg:w-2/3 lg:text-justify">
-            <h1 class="mb-5 text-3xl lg:text-6xl uppercase font-extralight" data-aos="fade-up"
-          data-aos-duration="2000">Contact us</h1>
-            <p class="text-base" data-aos="fade-up"
-          data-aos-duration="2000">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
-              recusandae nam quae, nisi modi id ullam esse provident animi dolor
-              iste ipsa? Fugit iste veritatis nesciunt deserunt obcaecati,
-              officiis quas!
+            <h1
+              class="mb-5 text-3xl uppercase lg:text-6xl font-extralight"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <img
+                src="./images/shape-6.png"
+                alt=""
+                class="hidden w-[300px] lg:block absolute -translate-y-28 translate-x-32 opacity-30 right-5 -z-10"
+              />
+              Contact us
+            </h1>
+            <p class="text-base" data-aos="fade-up" data-aos-duration="2000">
+              <span class="block mb-1 text-xl">Address</span>
+              <span> Jugoslávská 599/18, 120 00 Praha 2, Czechia </span>
             </p>
             <br />
-            <p class="text-base" data-aos="fade-up"
-          data-aos-duration="2000">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              totam ratione architecto veniam illum! Debitis iure, amet
-              temporibus pariatur minima perspiciatis expedita necessitatibus
-              hic, ipsam autem animi consequatur, nemo iusto.
+            <p class="text-base" data-aos="fade-up" data-aos-duration="2000">
+              <span class="block mb-1 text-xl">Call us</span>
+              <span class="block mb-5">+420 722447501</span>
+              <span class="block mb-1 text-xl">Whatsapp us</span>
+              <span class="block mb-5">+420 722447501</span>
+              <span class="block mb-1 text-xl">Email us</span>
+              <span class="block mb-5">booking@restaurant.com</span>
             </p>
             <br /><br />
             <p
-              class="text-base underline uppercase border-b border-b-yellow-300" data-aos="fade-left"
-          data-aos-duration="2000"
+              class="text-base underline uppercase border-b border-b-yellow-300"
+              data-aos="fade-left"
+              data-aos-duration="2000"
             >
               call us
             </p>
@@ -573,7 +682,7 @@
       </div>
     </section>
     <!-- Footer section -->
-    <footer class="text-white bg-cyan-700">
+    <footer class="px-5 text-white bg-cyan-700">
       <div
         class="container flex flex-col items-center px-5 py-8 mx-auto sm:flex-row"
       >
