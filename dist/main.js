@@ -21,10 +21,10 @@ menuButton.addEventListener("click", () => {
   menuButton.classList.toggle("ham-clicked");
 
   if (window.innerWidth < 640) {
-    if (navlinks.style.height == "700px") {
+    if (navlinks.style.height == "100vh") {
       navlinks.style.height = "0px";
     } else {
-      navlinks.style.height = "700px";
+      navlinks.style.height = "100vh";
     }
   } else {
     navlinks.classList.toggle("h-0");
@@ -34,7 +34,7 @@ menuButton.addEventListener("click", () => {
 
 // for mobile
 navlinks.addEventListener("click", () => {
-  if (navlinks.style.height == "700px") {
+  if (navlinks.style.height == "100vh") {
     menuButton.classList.toggle("ham-clicked");
     navlinks.style.height = "0px";
   }
@@ -43,5 +43,5 @@ navlinks.addEventListener("click", () => {
 // Main logo click
 logo = document.getElementById("logo-main");
 logo.addEventListener("click", () => {
-  document.location.reload();
+  document.location.reload(true);
 });
