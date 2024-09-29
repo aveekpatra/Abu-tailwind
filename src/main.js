@@ -20,7 +20,7 @@ const body = document.body;
 menuButton.addEventListener("click", () => {
   menuButton.classList.toggle("ham-clicked");
 
-  if (window.innerWidth < 640) {
+  if (window.innerWidth < 900) {
     if (navlinks.style.height == "100vh") {
       navlinks.style.height = "0px";
     } else {
