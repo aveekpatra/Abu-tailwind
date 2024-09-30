@@ -19,12 +19,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
       rel="stylesheet"
     />
@@ -61,7 +55,7 @@
 
     <!-- navbar & links -->
     <div
-      class="fixed md:sticky top-0 z-40 flex flex-row justify-between w-full shadow-md lg:px-5 bg-cyan-700 min-h-20"
+      class="fixed top-0 z-40 flex flex-row justify-between w-full shadow-md md:sticky lg:px-5 bg-cyan-700 min-h-20"
       id="topbar"
     >
       <div class="flex flex-row justify-between w-full px-3 lg:px-5">
@@ -79,16 +73,16 @@
         />
         <div class="flex items-center justify-center gap-3 text-white lg:gap-5">
           <div id="google_translate_element"></div>
-          <div class="transition duration-300 ease-out cursor-pointer hidden">
+          <div class="transition duration-300 ease-out cursor-pointer">
             <a
               class="text-red-300 transition duration-300 ease-out hover:text-white"
-              href="./index.html"
+              href="#"
               >CZ</a
             >
             /
             <a
               class="transition duration-300 ease-out hover:text-red-300"
-              href="./en.html"
+              href="./en/"
               >EN</a
             >
           </div>
@@ -160,10 +154,10 @@
             src="./images/logo.svg"
             id="nav-logo"
             alt=""
-            class="h-20 mt-14 lg:hidden mx-auto mb-3"
+            class="h-20 mx-auto mb-3 mt-14 lg:hidden"
           />
           <span
-            class="inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start lg:hidden gap-2 mb-20"
+            class="inline-flex justify-center gap-2 mb-20 sm:ml-auto sm:mt-0 sm:justify-start lg:hidden"
           >
             <a
               class="text-white"
@@ -251,11 +245,10 @@
           class="z-10 mx-2 text-2xl font-light text-center text-white uppercase md:w-full md:text-4xl lg:w-9/12 lg:text-7xl font-sinzel lg:-translate-y-10"
         >
           <p class="" data-aos-duration="2000" data-aos="fade-up">
-            EXPERIENCE <br />THE MOST AUTHENTIC <br />
-            MIDDLE EASTERN CUISINE IN PRAGUE
+            POZNEJTE <br> NEJORIGINÁLNĚJŠÍ STŘEDOVÝCHODNÍ KUCHYNI V PRAZE
           </p>
           <span
-            class="inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start lg:gap-5 gap-2 pt-3 mt-5 lg:pt-5 border-t-2"
+            class="inline-flex justify-center gap-2 pt-3 mt-5 border-t-2 sm:ml-auto sm:mt-0 sm:justify-start lg:gap-5 lg:pt-5"
           >
             <a
               class="text-white"
@@ -274,7 +267,6 @@
                 ></path>
               </svg>
             </a>
-
             <a
               class="ml-3 text-white"
               href="https://www.instagram.com/abu.prague/"
@@ -331,7 +323,7 @@
             data-aos-duration="2000"
             data-aos-delay="1000"
             data-aos="fade-up"
-            class="md:hidden block mx-auto mt-11 text-base font-semibold transition duration-300 ease-out border-b-2 lg:mt-8 hover:text-red-300 font-sinzel"
+            class="block mx-auto text-base font-semibold transition duration-300 ease-out border-b-2 md:hidden mt-11 lg:mt-8 hover:text-red-300 font-sinzel"
           >
             <a href="https://forms.office.com/r/RkPkdUdeQX" target="_blank"
               >BOOK A TABLE</a
@@ -340,11 +332,11 @@
         </div>
       </div>
       <div
-        class="hidden lg:inline-block absolute left-0 text-xl leading-10 text-white -rotate-90 bottom-20 lg:bottom-32 opacity-45 uppercase"
+        class="absolute left-0 hidden text-xl leading-10 text-white uppercase -rotate-90 lg:inline-block bottom-20 lg:bottom-32 opacity-45"
       >
         Prague
       </div>
-      <a href="#menu" class="flex w-screen justify-center items-center">
+      <a href="#menu" class="flex items-center justify-center w-screen">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -377,7 +369,8 @@
         <p
           class="mx-auto text-base leading-relaxed text-center text-white mb-14 lg:text-lg lg:pl-6 lg:w-2/3 font-extralight"
           data-aos="fade-up"
-          data-aos-duration="1000"
+          data-aos-duration="2000"
+          data-aos-delay="300"
         >
           Experience the rich flavors of the Middle East with our authentic
           dishes, thoughtfully crafted using traditional recipes and the
@@ -442,7 +435,7 @@
         <div class="flex items-center justify-center w-full mt-10">
           <a href="https://forms.office.com/r/RkPkdUdeQX" target="_blank">
             <button
-              class="px-8 py-5 shadow-md uppercase bg-cyan-600 hover:bg-cyan-800 transition-all duration-200 ease-out text-white font-sinzel hover:shadow-lg font-semibold"
+              class="px-8 py-5 font-semibold text-white uppercase transition-all duration-200 ease-out shadow-md bg-cyan-600 hover:bg-cyan-800 font-sinzel hover:shadow-lg"
             >
               BOOK A TABLE
             </button>
@@ -468,6 +461,9 @@
           </h1>
           <p
             class="mx-auto mt-10 text-base leading-relaxed text-center lg:text-lg lg:pl-6 lg:w-2/3 font-extralight"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-delay="300"
           >
             Explore our gallery and immerse yourself in the vibrant colors and
             authentic atmosphere of our Middle Eastern dishes and dining
@@ -536,7 +532,7 @@
         >
           <img
             src="./images/blue-pattern.png"
-            class="absolute md:h-screen -left-48 -translate-y-40 opacity-40"
+            class="absolute -translate-y-40 md:h-screen -left-48 opacity-40"
             alt=""
           />
           <div
@@ -593,7 +589,7 @@
           <img
             src="./images/abu-outside.heic"
             alt=""
-            class="object-cover lg:h-screen z-10"
+            class="z-10 object-cover lg:h-screen"
           />
         </div>
       </div>
@@ -602,14 +598,14 @@
       >
         <div
           id="left2"
-          class="w-full lg:w-1/2 z-20"
+          class="z-20 w-full lg:w-1/2"
           data-aos="fade-right"
           data-aos-duration="2000"
         >
           <img
             src="./images/cocktail.jpg"
             alt=""
-            class="object-cover lg:h-screen z-20"
+            class="z-20 object-cover lg:h-screen"
           />
         </div>
         <div
@@ -620,7 +616,7 @@
         >
           <img
             src="./images/blue-pattern.png"
-            class="absolute md:h-screen -right-48 -translate-y-40 opacity-40"
+            class="absolute -translate-y-40 md:h-screen -right-48 opacity-40"
             alt=""
           />
           <div class="w-full lg:ml-24 lg:w-2/3 lg:text-justify">
@@ -679,12 +675,12 @@
         >
           <img
             src="./images/blue-pattern.png"
-            class="absolute md:h-screen -left-48 -translate-y-40 opacity-40"
+            class="absolute -translate-y-40 md:h-screen -left-48 opacity-40"
             alt=""
           />
           <div class="w-full lg:ml-24 lg:w-2/3 lg:text-justify">
             <h1
-              class="lg:mb-5 text-4xl uppercase lg:text-6xl font-extralight font-sinzel mb-10"
+              class="mb-10 text-4xl uppercase lg:mb-5 lg:text-6xl font-extralight font-sinzel"
               data-aos="fade-up"
               data-aos-duration="2000"
             >
@@ -696,11 +692,11 @@
               data-aos-duration="2000"
             >
               <p
-                class="text-white font-extralight text-lg"
+                class="text-lg text-white font-extralight"
                 data-aos="fade-up"
                 data-aos-duration="2000"
               >
-                <span class="mb-1 text-xl flex gap-3 items-center"
+                <span class="flex items-center gap-3 mb-1 text-xl"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -718,7 +714,7 @@
                   Book Online</span
                 >
                 <span
-                  class="block mb-5 hover:text-red-300 transition-all duration-200 ease-in-out"
+                  class="block mb-5 transition-all duration-200 ease-in-out hover:text-red-300"
                   ><a
                     href="https://forms.office.com/r/RkPkdUdeQX"
                     target="_blank"
@@ -726,7 +722,7 @@
                     booking.abu-restaurant.cz
                   </a></span
                 >
-                <span class="mb-1 text-xl flex gap-3 items-center"
+                <span class="flex items-center gap-3 mb-1 text-xl"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -744,10 +740,10 @@
                   Booking On Call</span
                 >
                 <span
-                  class="block mb-5 hover:text-red-300 transition-all duration-200 ease-in-out"
+                  class="block mb-5 transition-all duration-200 ease-in-out hover:text-red-300"
                   ><a href="tel:+420 722447501">+420 722447501</a></span
                 >
-                <span class="mb-1 text-xl flex gap-3 items-center">
+                <span class="flex items-center gap-3 mb-1 text-xl">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -765,10 +761,10 @@
                   Book Via Whatsapp</span
                 >
                 <span
-                  class="block mb-5 hover:text-red-300 transition-all duration-200 ease-in-out"
+                  class="block mb-5 transition-all duration-200 ease-in-out hover:text-red-300"
                   ><a href="https://wa.me/420722447501">+420 722447501</a></span
                 >
-                <span class="mb-1 text-xl flex gap-3 items-center">
+                <span class="flex items-center gap-3 mb-1 text-xl">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -786,7 +782,7 @@
                   Book With Email</span
                 >
                 <span
-                  class="block mb-5 hover:text-red-300 transition-all duration-200 ease-in-out"
+                  class="block mb-5 transition-all duration-200 ease-in-out hover:text-red-300"
                   ><a href="mailto:booking@abu-restaurant.cz"
                     >booking@abu-restaurant.cz</a
                   ></span
@@ -794,7 +790,7 @@
               </p>
 
               <div class="text-sm lg:text-base">
-                <div class="mb-3 text-lg uppercase flex gap-3 items-center">
+                <div class="flex items-center gap-3 mb-3 text-lg uppercase">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -851,7 +847,7 @@
         id="contact"
       >
         <div
-          class="w-full lg:w-1/2 z-20"
+          class="z-20 w-full lg:w-1/2"
           data-aos="fade-right"
           data-aos-duration="2000"
         >
@@ -870,22 +866,22 @@
           <div class="w-full lg:ml-24 lg:w-2/3 lg:text-justify">
             <img
               src="./images/blue-pattern.png"
-              class="absolute lg:h-screen -right-48 -translate-y-40 opacity-40"
+              class="absolute -translate-y-40 lg:h-screen -right-48 opacity-40"
               alt=""
             />
             <h1
-              class="mb-14 text-4xl uppercase lg:text-6xl font-extralight font-sinzel"
+              class="text-4xl uppercase mb-14 lg:text-6xl font-extralight font-sinzel"
               data-aos="fade-up"
               data-aos-duration="2000"
             >
               Contact us
             </h1>
             <p
-              class="text-white font-extralight text-lg"
+              class="text-lg text-white font-extralight"
               data-aos="fade-up"
               data-aos-duration="2000"
             >
-              <span class="mb-1 text-xl flex gap-3 items-center"
+              <span class="flex items-center gap-3 mb-1 text-xl"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -903,7 +899,7 @@
                 Address</span
               >
               <span
-                class="hover:text-red-300 transition-all duration-200 ease-in-out"
+                class="transition-all duration-200 ease-in-out hover:text-red-300"
                 ><a
                   href="https://maps.app.goo.gl/fBPFLwtUaCqVedfw9"
                   target="_blank"
@@ -915,11 +911,11 @@
             </p>
             <br />
             <p
-              class="text-white font-extralight text-lg"
+              class="text-lg text-white font-extralight"
               data-aos="fade-up"
               data-aos-duration="2000"
             >
-              <!-- <span class="mb-1 text-xl flex gap-3 items-center"
+              <!-- <span class="flex items-center gap-3 mb-1 text-xl"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -937,7 +933,7 @@
                 Book Online</span
               >
               <span
-                class="block mb-5 hover:text-red-300 transition-all duration-200 ease-in-out"
+                class="block mb-5 transition-all duration-200 ease-in-out hover:text-red-300"
                 ><a
                   href="https://forms.office.com/r/RkPkdUdeQX"
                   target="_blank"
@@ -945,7 +941,7 @@
                   booking.abu-restaurant.cz
                 </a></span
               > -->
-              <span class="mb-1 text-xl flex gap-3 items-center"
+              <span class="flex items-center gap-3 mb-1 text-xl"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -963,10 +959,10 @@
                 Call</span
               >
               <span
-                class="block mb-5 hover:text-red-300 transition-all duration-200 ease-in-out"
+                class="block mb-5 transition-all duration-200 ease-in-out hover:text-red-300"
                 ><a href="tel:+420 722447501">+420 722447501</a></span
               >
-              <span class="mb-1 text-xl flex gap-3 items-center">
+              <span class="flex items-center gap-3 mb-1 text-xl">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -984,10 +980,10 @@
                 Whatsapp</span
               >
               <span
-                class="block mb-5 hover:text-red-300 transition-all duration-200 ease-in-out"
+                class="block mb-5 transition-all duration-200 ease-in-out hover:text-red-300"
                 ><a href="https://wa.me/420722447501">+420 722447501</a></span
               >
-              <span class="mb-1 text-xl flex gap-3 items-center">
+              <span class="flex items-center gap-3 mb-1 text-xl">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -1005,7 +1001,7 @@
                 Email</span
               >
               <span
-                class="block mb-5 hover:text-red-300 transition-all duration-200 ease-in-out"
+                class="block mb-5 transition-all duration-200 ease-in-out hover:text-red-300"
                 ><a href="mailto:info@abu-restaurant.cz"
                   >info@abu-restaurant.cz</a
                 ></span
@@ -1013,7 +1009,7 @@
             </p>
             <br /><br />
             <p
-              class="text-base uppercase border-b border-b-yellow-300 hover:text-red-300 transition-all duration-200 ease-in-out"
+              class="text-base uppercase transition-all duration-200 ease-in-out border-b border-b-yellow-300 hover:text-red-300"
               data-aos="fade-left"
               data-aos-duration="2000"
             >
@@ -1029,17 +1025,17 @@
       </div>
     </section>
     <!-- Footer section -->
-    <footer class="bg-cyan-800 text-center lg:text-start" id="footer">
+    <footer class="text-center bg-cyan-800 lg:text-start" id="footer">
       <div
         class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-3 pt-[160px] lg:px-8 min-h-screen"
       >
         <div class="sm:flex sm:items-center sm:justify-center">
-          <div class="text-white w-full flex justify-center md:justify-start">
+          <div class="flex justify-center w-full text-white md:justify-start">
             <img src="./images/logo.svg" class="w-44" alt="" />
           </div>
 
           <ul
-            class="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-start lg:pr-10"
+            class="flex justify-center gap-6 mt-8 sm:mt-0 lg:justify-start lg:pr-10"
           >
             <li>
               <a
@@ -1162,7 +1158,7 @@
         </div>
 
         <div
-          class="grid grid-cols-1 gap-8 border-t border-gray-100 pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16"
+          class="grid grid-cols-1 gap-8 pt-8 border-t border-gray-100 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16"
         >
           <div>
             <p class="font-medium text-gray-400">Services</p>
@@ -1170,33 +1166,28 @@
             <ul class="mt-6 space-y-4 text-sm">
               <li>
                 <a href="#" class="text-gray-200 transition hover:opacity-75">
-                  1on1 Coaching
+                  Our Menu
                 </a>
               </li>
 
               <li>
                 <a href="#" class="text-gray-200 transition hover:opacity-75">
-                  Company Review
+                  Online Reservation
                 </a>
               </li>
 
               <li>
                 <a href="#" class="text-gray-200 transition hover:opacity-75">
-                  Accounts Review
+                  Batch Reservation
                 </a>
               </li>
 
               <li>
                 <a href="#" class="text-gray-200 transition hover:opacity-75">
-                  HR Consulting
+                  Custom Order
                 </a>
               </li>
 
-              <li>
-                <a href="#" class="text-gray-200 transition hover:opacity-75">
-                  SEO Optimisation
-                </a>
-              </li>
             </ul>
           </div>
 
@@ -1279,11 +1270,11 @@
           </div>
         </div>
 
-        <div class="w-full flex justify-between flex-col lg:flex-row pt-5">
+        <div class="flex flex-col justify-between w-full pt-5 lg:flex-row">
           <p class="text-xs text-white">
             &copy; 2024. Abu Restaurant. All rights reserved.
           </p>
-          <p class="text-xs text-white mt-3">
+          <p class="mt-3 text-xs text-white">
             Designed by:
             <a href="https://www.instagram.com/aveek.patra/" target="_blank"
               >@aveek.patra</a
