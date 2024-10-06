@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover Abu Restaurant in Prague, offering authentic Middle Eastern cuisine and vibrant atmosphere. Book a table, explore our menu, and enjoy handcrafted cocktails. Open Mon-Sun, 9am-9pm. Visit us in person or online."
+    />
     <link rel="stylesheet" href="../style.css" />
     <link
       rel="shortcut icon"
       href="../images/logo-mobile.svg"
+      alt="website logo for mobile"
       type="image/x-icon"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,24 +24,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
     <link
-      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
-      rel="stylesheet"
-      crossorigin="anonymous"
+      rel="preload"
+      as="image"
+      href="../images/shoot-20.jpg"
+      type="image/jpeg"
     />
     <!-- Animations -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -53,7 +48,7 @@
       <p class="text">
         <img
           src="../images/logo.svg"
-          alt="Abu - Home"
+          alt="website logo"
           class="-translate-x-2 w-[240px] md:w-[320px]"
         />
       </p>
@@ -75,20 +70,21 @@
         <img
           src="../images/logo-mobile.svg"
           class="h-14 lg:h-20 lg:-translate-x-[1.7rem] my-auto"
+          alt="website logo for mobile"
           id="logo-main"
         />
         <div class="flex items-center justify-center gap-3 text-white lg:gap-5">
           <div id="google_translate_element"></div>
           <div class="transition duration-300 ease-out cursor-pointer">
             <a
-              class="transition duration-300 ease-out hover:text-red-300"
+              class="text-red-300 transition duration-300 ease-out hover:text-white"
               href="../"
               >CZ</a
             >
             /
             <a
-              class="text-red-300 transition duration-300 ease-out hover:text-white"
-              href="#"
+              class="transition duration-300 ease-out hover:text-red-300"
+              href="./"
               >EN</a
             >
           </div>
@@ -159,7 +155,7 @@
           <img
             src="../images/logo.svg"
             id="nav-logo"
-            alt=""
+            alt="website logo"
             class="h-20 mx-auto mb-3 mt-14 lg:hidden"
           />
           <span
@@ -239,7 +235,7 @@
     </div>
     <!-- Landing page -->
     <div
-      class="bg-[url('././images/abu-inside-2-edit.jpg')] bg-cover bg-center w-full h-screen md:h-[100vh] lg:h-screen relative"
+      class="bg-[url('./images/shoot-20.jpg')] bg-cover bg-center w-full h-screen md:h-[100vh] lg:h-screen relative"
     >
       <div class="absolute inset-0 h-full bg-black opacity-50"></div>
       <!-- Content -->
@@ -251,7 +247,8 @@
           class="z-10 mx-2 text-2xl font-light text-center text-white uppercase md:w-full md:text-4xl lg:w-9/12 lg:text-7xl font-sinzel lg:-translate-y-10"
         >
           <p class="" data-aos-duration="2000" data-aos="fade-up">
-            EXPERIENCE <br />THE MOST AUTHENTIC <br />
+            EXPERIENCE <br />
+            THE MOST AUTHENTIC <br />
             MIDDLE EASTERN CUISINE IN PRAGUE
           </p>
           <span
@@ -389,16 +386,20 @@
             id="item1"
             class="relative flex flex-col items-center justify-center text-lg text-white uppercase transition-all duration-300 ease-out border border-yellow-300 h-60 bg-cyan-700 hover:shadow-xl hover:border-8 font-sinzel"
           >
-            <img src="../images/separator.svg" alt="" class="w-1/2 mb-5" />
+            <img
+              src="../images/separator.svg"
+              alt="separator"
+              class="w-1/2 mb-5"
+            />
             Coming Soon!
             <img
               src="../images/img-pattern.svg"
-              alt=""
+              alt="pattern design"
               class="absolute left-0 w-10 h-full"
             />
             <img
               src="../images/img-pattern.svg"
-              alt=""
+              alt="pattern design"
               class="absolute right-0 w-10 h-full"
             />
           </div>
@@ -407,16 +408,20 @@
             id="item2"
             class="relative flex flex-col items-center justify-center text-lg text-white uppercase transition-all duration-300 ease-out border border-yellow-300 h-60 bg-cyan-700 hover:shadow-xl hover:border-8 font-sinzel"
           >
-            <img src="../images/separator.svg" alt="" class="w-1/2 mb-5" />
+            <img
+              src="../images/separator.svg"
+              alt="separator"
+              class="w-1/2 mb-5"
+            />
             Coming Soon!
             <img
               src="../images/img-pattern.svg"
-              alt=""
+              alt="pattern design"
               class="absolute left-0 w-10 h-full"
             />
             <img
               src="../images/img-pattern.svg"
-              alt=""
+              alt="pattern design"
               class="absolute right-0 w-10 h-full"
             />
           </div>
@@ -425,16 +430,20 @@
             id="item3"
             class="relative flex flex-col items-center justify-center text-lg text-white uppercase transition-all duration-300 ease-out border border-yellow-300 h-60 bg-cyan-700 hover:shadow-xl hover:border-8 font-sinzel"
           >
-            <img src="../images/separator.svg" alt="" class="w-1/2 mb-5" />
+            <img
+              src="../images/separator.svg"
+              alt="separator"
+              class="w-1/2 mb-5"
+            />
             Coming Soon!
             <img
               src="../images/img-pattern.svg"
-              alt=""
+              alt="pattern"
               class="absolute left-0 w-10 h-full"
             />
             <img
               src="../images/img-pattern.svg"
-              alt=""
+              alt="pattern"
               class="absolute right-0 w-10 h-full"
             />
           </div>
@@ -485,42 +494,42 @@
         >
           <img
             src="../images/dishes/1.jpg"
-            alt=""
+            alt="Food menu item"
             class="object-cover w-full md:h-[600px] lg:w-[1000px]"
             data-aos="fade-up"
             data-aos-duration="2000"
           />
           <img
             src="../images/dishes/7.jpg"
-            alt=""
+            alt="Food menu item"
             class="object-cover w-full md:h-[600px] lg:w-[1000px]"
             data-aos="fade-up"
             data-aos-duration="2000"
           />
           <img
             src="../images/dishes/9.jpg"
-            alt=""
+            alt="Food menu item"
             class="object-cover w-full md:h-[600px] lg:w-[1000px]"
             data-aos="fade-up"
             data-aos-duration="2000"
           />
           <img
             src="../images/dishes/15.jpg"
-            alt=""
+            alt="Food menu item"
             class="object-cover w-full md:h-[600px] lg:w-[1000px]"
             data-aos="fade-up"
             data-aos-duration="2000"
           />
           <img
             src="../images/dishes/20.jpg"
-            alt=""
+            alt="Food menu item"
             class="object-cover w-full md:h-[600px] lg:w-[1000px]"
             data-aos="fade-up"
             data-aos-duration="2000"
           />
           <img
             src="../images/dishes/17.jpg"
-            alt=""
+            alt="Food menu item"
             class="object-cover w-full md:h-[600px] lg:w-[1000px]"
             data-aos="fade-up"
             data-aos-duration="2000"
@@ -540,7 +549,7 @@
           <img
             src="../images/blue-pattern.png"
             class="absolute -translate-y-40 md:h-screen -left-48 opacity-40"
-            alt=""
+            alt="blue pattern"
           />
           <div
             class="w-full lg:ml-24 lg:w-2/3 lg:text-justify"
@@ -594,14 +603,14 @@
           data-aos-duration="2000"
         >
           <img
-            src="../images/abu-outside.heic"
-            alt=""
+            src="../images/inside-new-1.jpg"
+            alt="Image of the restaurant interior"
             class="z-10 object-cover lg:h-screen"
           />
         </div>
       </div>
       <div
-        class="flex flex-col-reverse w-screen min-h-screen lg:flex-row bg-cyan-700 py-14"
+        class="flex flex-col-reverse w-screen min-h-screen lg:flex-row bg-cyan-700 py-14 pt-[200px]"
       >
         <div
           id="left2"
@@ -610,8 +619,8 @@
           data-aos-duration="2000"
         >
           <img
-            src="../images/cocktail.jpg"
-            alt=""
+            src="../images/new-bar-2.jpg"
+            alt="Image of some drinks served on the bar"
             class="z-20 object-cover lg:h-screen"
           />
         </div>
@@ -623,8 +632,8 @@
         >
           <img
             src="../images/blue-pattern.png"
-            class="absolute -translate-y-40 md:h-screen -right-48 opacity-40"
-            alt=""
+            class="absolute -translate-y-40 md:h-screen -z-10 -right-48 opacity-40"
+            alt="blue pattern"
           />
           <div class="w-full lg:ml-24 lg:w-2/3 lg:text-justify">
             <h1
@@ -683,7 +692,7 @@
           <img
             src="../images/blue-pattern.png"
             class="absolute -translate-y-40 md:h-screen -left-48 opacity-40"
-            alt=""
+            alt="blue pattern"
           />
           <div class="w-full lg:ml-24 lg:w-2/3 lg:text-justify">
             <h1
@@ -814,14 +823,13 @@
                   </svg>
                   Opening times
                 </div>
-                MONDAY 17:30 – 00:00 <br />
-                TUESDAY 12:30 – 15:00 / 17:30 – 00:00
-                <br />
-                WEDNESDAY 12:30 – 15:00 / 17:30 – 00:00 <br />
-                THURSDAY 12:30 – 15:00 / 17:30 – 01:00 <br />
-                FRIDAY 12:30 – 15:00 / 17:30 – 01:00 <br />
-                SATURDAY 12:30 – 15:00 / 17:30 – 01:00 <br />
-                SUNDAY 12:30 – 15:00 /17:30 – 21:00
+                MONDAY: 09:00 - 21:00 <br />
+                TUESDAY: 09:00 - 21:00 <br />
+                WEDNESDAY: 09:00 - 21:00 <br />
+                THURSDAY: 09:00 - 21:00 <br />
+                FRIDAY: 09:00 - 21:00 <br />
+                SATURDAY: 09:00 - 21:00 <br />
+                SUNDAY: 09:00 - 21:00
               </div>
               <br />
 
@@ -843,8 +851,8 @@
           data-aos-duration="2000"
         >
           <img
-            src="../images/abu-inside-1.heic"
-            alt=""
+            src="../images/new-8.jpg"
+            alt="An artistic photo of the table-tops"
             class="object-cover lg:h-screen"
           />
         </div>
@@ -874,7 +882,7 @@
             <img
               src="../images/blue-pattern.png"
               class="absolute -translate-y-40 lg:h-screen -right-48 opacity-40"
-              alt=""
+              alt="blue pattern"
             />
             <h1
               class="text-4xl uppercase mb-14 lg:text-6xl font-extralight font-sinzel"
@@ -1038,7 +1046,7 @@
       >
         <div class="sm:flex sm:items-center sm:justify-center">
           <div class="flex justify-center w-full text-white md:justify-start">
-            <img src="../images/logo.svg" class="w-44" alt="" />
+            <img src="../images/logo.svg" class="w-44" alt="footer logo" />
           </div>
 
           <ul

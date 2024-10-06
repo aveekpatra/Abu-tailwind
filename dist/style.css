@@ -648,6 +648,10 @@ video {
   top: 5rem;
 }
 
+.-z-10 {
+  z-index: -10;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -758,6 +762,10 @@ video {
 
 .inline-flex {
   display: inline-flex;
+}
+
+.table {
+  display: table;
 }
 
 .grid {
@@ -1032,12 +1040,8 @@ video {
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\/\.\/images\/abu-inside-2-edit\.jpg\'\)\] {
-  background-image: url('././images/abu-inside-2-edit.jpg');
-}
-
-.bg-\[url\(\'\.\/images\/abu-inside-2-edit\.jpg\'\)\] {
-  background-image: url('./images/abu-inside-2-edit.jpg');
+.bg-\[url\(\'\.\/images\/shoot-20\.jpg\'\)\] {
+  background-image: url('./images/shoot-20.jpg');
 }
 
 .bg-cover {
