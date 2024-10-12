@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en" class="!scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Discover Abu Restaurant in Prague, offering authentic Middle Eastern cuisine and vibrant atmosphere. Book a table, explore our menu, and enjoy handcrafted cocktails. Open Mon-Sun, 9am-9pm. Visit us in person or online."
+      content="Discover Abu Restaurant in Prague, offering authentic Middle Eastern cuisine and vibrant atmosphere. book a table, explore Naše menu, and enjoy handcrafted cocktails. Open Mon-Sun, 9am-9pm. Visit us in person or online."
     />
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="shortcut icon"
-      href="./images/logo-mobile.svg"
+      href="favicon.ico"
       alt="website logo for mobile"
       type="image/x-icon"
     />
@@ -30,7 +30,7 @@
     <link
       rel="preload"
       as="image"
-      href="./images/shoot-20.jpg"
+      href="./images/menu-food.webp"
       type="image/jpeg"
     />
     <!-- Animations -->
@@ -56,20 +56,20 @@
 
     <!-- navbar & links -->
     <div
-      class="fixed top-0 z-40 flex flex-row justify-between w-full shadow-md md:sticky lg:px-5 bg-cyan-700 min-h-20"
+      class="fixed top-0 z-40 flex flex-row justify-between w-full md:fixed lg:px-5 bg-cyan-700 min-h-20 bg-transparent transition-all ease-in-out"
       id="topbar"
     >
       <div class="flex flex-row justify-between w-full px-3 lg:px-5">
         <button
-          class="hidden my-auto text-base text-white transition duration-300 ease-out border-b lg:inline-block border-b-white hover:text-red-300"
+          class="hidden my-auto text-base text-white transition duration-300 ease-out border-b lg:inline-block border-b-white hover:text-red-300 uppercase font-sinzel font-bold"
         >
           <a href="https://forms.office.com/r/RkPkdUdeQX" target="_blank"
-            >BOOK A TABLE</a
+            >Rezervujte si stůl</a
           >
         </button>
         <img
           src="./images/logo-mobile.svg"
-          class="h-14 lg:h-20 lg:-translate-x-[1.7rem] my-auto"
+          class="h-14 lg:h-20 lg:-translate-x-[.7rem] my-auto"
           alt="website logo for mobile"
           id="logo-main"
         />
@@ -77,13 +77,13 @@
           <div id="google_translate_element"></div>
           <div class="transition duration-300 ease-out cursor-pointer">
             <a
-              class="text-red-300 transition duration-300 ease-out hover:text-white"
+              class="text-red-300 transition duration-300 ease-out hover:text-white font-sinzel font-bold"
               href="./"
               >CZ</a
             >
             /
             <a
-              class="transition duration-300 ease-out hover:text-red-300"
+              class="transition duration-300 ease-out hover:text-red-300 font-sinzel font-bold"
               href="./en/"
               >EN</a
             >
@@ -235,7 +235,7 @@
     </div>
     <!-- Landing page -->
     <div
-      class="bg-[url('./images/shoot-20.jpg')] bg-cover bg-center w-full h-screen md:h-[100vh] lg:h-screen relative"
+      class="bg-[url('./images/menu-food.webp')] bg-cover bg-center w-full h-screen md:h-[100vh] lg:h-screen relative lg:pt-28"
     >
       <div class="absolute inset-0 h-full bg-black opacity-50"></div>
       <!-- Content -->
@@ -246,7 +246,7 @@
           id="hero-txt"
           class="z-10 mx-2 text-2xl font-light text-center text-white uppercase md:w-full md:text-4xl lg:w-9/12 lg:text-7xl font-sinzel lg:-translate-y-10"
         >
-          <p class="" data-aos-duration="2000" data-aos="fade-up">
+          <p class="" data-aos-duration="1500" data-aos="fade-up">
             POZNEJTE <br />
             NEJORIGINÁLNĚJŠÍ STŘEDOVÝCHODNÍ KUCHYNI V PRAZE
           </p>
@@ -323,21 +323,21 @@
           </span>
 
           <button
-            data-aos-duration="2000"
+            data-aos-duration="1500"
             data-aos-delay="1000"
             data-aos="fade-up"
             class="block mx-auto text-base font-semibold transition duration-300 ease-out border-b-2 md:hidden mt-11 lg:mt-8 hover:text-red-300 font-sinzel"
           >
             <a href="https://forms.office.com/r/RkPkdUdeQX" target="_blank"
-              >BOOK A TABLE</a
+              >Rezervujte si stůl</a
             >
           </button>
         </div>
       </div>
       <div
-        class="absolute left-0 hidden text-xl leading-10 text-white uppercase -rotate-90 lg:inline-block bottom-20 lg:bottom-32 opacity-45"
+        class="absolute left-0 hidden text-xl leading-10 text-white uppercase -rotate-90 lg:inline-block bottom-20 lg:bottom-20 opacity-45 font-sinzel font-bold"
       >
-        Prague
+        Praha
       </div>
       <a href="#menu" class="flex items-center justify-center w-screen">
         <svg
@@ -346,7 +346,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="white"
-          class="absolute z-10 lg:w-10 lg:h-10 bottom-32 lg:bottom-32 lg:left-14 animate-bounce size-8"
+          class="absolute z-10 lg:w-10 lg:h-10 bottom-32 lg:bottom-20 lg:left-14 animate-bounce size-8"
         >
           <path
             stroke-linecap="round"
@@ -365,86 +365,40 @@
         <h2
           class="pb-4 mb-5 text-4xl text-center text-white uppercase lg:text-5xl font-extralight font-sinzel"
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="1500"
         >
-          Our Menu
+          Naše menu
         </h2>
         <p
-          class="mx-auto text-base leading-relaxed text-center text-white mb-14 lg:text-lg lg:pl-6 lg:w-2/3 font-extralight"
+          class="mx-auto text-base leading-relaxed text-center text-white mb-14 lg:text-xl lg:pl-6 lg:w-2/3 font-extralight"
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="1500"
           data-aos-delay="300"
         >
-          Experience the rich flavors of the Middle East with our authentic
-          dishes, thoughtfully crafted using traditional recipes and the
-          freshest ingredients.
+          Poznejte bohaté chutě Blízkého východu s našimi autentickými pokrmy,
+          které jsou promyšleně připraveny podle tradičních receptů a z těch
+          nejčerstvějších surovin.
         </p>
 
-        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:mx-20">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:mx-20">
           <div
             id="item1"
-            class="relative flex flex-col items-center justify-center text-lg text-white uppercase transition-all duration-300 ease-out border border-yellow-300 h-60 bg-cyan-700 hover:shadow-xl hover:border-8 font-sinzel"
+            class="relative flex flex-col items-center justify-center text-2xl uppercase transition-all duration-300 ease-out border border-yellow-300 h-60 bg-cyan-700 hover:shadow-xl hover:border-8 font-sinzel bg-[url('./images/menu-food.webp')] bg-cover min-h-[400px] bg-center text-black lg:text-5xl cursor-pointer"
           >
-            <img
-              src="./images/separator.svg"
-              alt="separator"
-              class="w-1/2 mb-5"
-            />
-            Coming Soon!
-            <img
-              src="./images/img-pattern.svg"
-              alt="pattern design"
-              class="absolute left-0 w-10 h-full"
-            />
-            <img
-              src="./images/img-pattern.svg"
-              alt="pattern design"
-              class="absolute right-0 w-10 h-full"
-            />
+            <span
+              class="backdrop-brightness-50 text-white w-full h-full py-[100px] flex items-center justify-center"
+              >Jídelní lístek</span
+            >
           </div>
 
           <div
             id="item2"
-            class="relative flex flex-col items-center justify-center text-lg text-white uppercase transition-all duration-300 ease-out border border-yellow-300 h-60 bg-cyan-700 hover:shadow-xl hover:border-8 font-sinzel"
+            class="relative flex flex-col items-center justify-center text-2xl uppercase transition-all duration-300 ease-out border border-yellow-300 h-60 bg-cyan-700 hover:shadow-xl hover:border-8 font-sinzel bg-[url('./images/menu-drink.webp')] bg-cover min-h-[400px] bg-center text-black lg:text-5xl cursor-pointer"
           >
-            <img
-              src="./images/separator.svg"
-              alt="separator"
-              class="w-1/2 mb-5"
-            />
-            Coming Soon!
-            <img
-              src="./images/img-pattern.svg"
-              alt="pattern design"
-              class="absolute left-0 w-10 h-full"
-            />
-            <img
-              src="./images/img-pattern.svg"
-              alt="pattern design"
-              class="absolute right-0 w-10 h-full"
-            />
-          </div>
-
-          <div
-            id="item3"
-            class="relative flex flex-col items-center justify-center text-lg text-white uppercase transition-all duration-300 ease-out border border-yellow-300 h-60 bg-cyan-700 hover:shadow-xl hover:border-8 font-sinzel"
-          >
-            <img
-              src="./images/separator.svg"
-              alt="separator"
-              class="w-1/2 mb-5"
-            />
-            Coming Soon!
-            <img
-              src="./images/img-pattern.svg"
-              alt="pattern"
-              class="absolute left-0 w-10 h-full"
-            />
-            <img
-              src="./images/img-pattern.svg"
-              alt="pattern"
-              class="absolute right-0 w-10 h-full"
-            />
+            <span
+              class="backdrop-brightness-50 text-white w-full h-full py-[100px] flex items-center justify-center"
+              >Nápojový lístek</span
+            >
           </div>
         </div>
         <div class="flex items-center justify-center w-full mt-10">
@@ -452,86 +406,86 @@
             <button
               class="px-8 py-5 font-semibold text-white uppercase transition-all duration-200 ease-out shadow-md bg-cyan-600 hover:bg-cyan-800 font-sinzel hover:shadow-lg"
             >
-              BOOK A TABLE
+              Rezervujte si stůl
             </button>
           </a>
         </div>
       </div>
     </section>
     <!-- gallery section -->
-    <section
-      class="text-white bg-cyan-700 pt-[200px]"
-      id="gallery"
-      data-aos="fade-up"
-      data-aos-duration="2000"
-    >
+    <section class="text-white bg-cyan-700 pt-[200px]" id="gallery">
       <div class="container flex flex-wrap px-5 py-24 mx-auto">
         <div class="flex-row flex-wrap w-full mb-20">
           <h1
             class="mx-auto mb-5 text-4xl text-center text-white uppercase lg:text-5xl font-extralight lg:w-1/3 lg:mb-0 font-sinzel"
             data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
           >
-            Our gallery
+            Naše fotogalerie
           </h1>
           <p
-            class="mx-auto mt-10 text-base leading-relaxed text-center lg:text-lg lg:pl-6 lg:w-2/3 font-extralight"
+            class="mx-auto mt-10 text-base leading-relaxed text-center lg:text-xl lg:pl-6 lg:w-2/3 font-extralight"
             data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
             data-aos-delay="300"
           >
-            Explore our gallery and immerse yourself in the vibrant colors and
-            authentic atmosphere of our Middle Eastern dishes and dining
-            experience.
+            Prozkoumejte naši galerii a nechte se unést autentickou atmosférou a
+            chutěmi našich blízkovýchodních pokrmů.
           </p>
         </div>
 
         <div
-          class="grid gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-10 lg:px-10"
+          class="grid gap-5 md:grid-cols-2 lg:grid-cols-2 lg:gap-10 lg:px-10"
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="1500"
         >
           <img
-            src="./images/dishes/1.jpg"
+            src="./images/item-1.webp"
+            loading="lazy"
             alt="Food menu item"
             class="object-cover w-full md:h-[600px] lg:w-[1000px]"
             data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
           />
           <img
-            src="./images/dishes/7.jpg"
+            src="./images/item-3.webp"
+            loading="lazy"
             alt="Food menu item"
             class="object-cover w-full md:h-[600px] lg:w-[1000px]"
             data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
           />
           <img
-            src="./images/dishes/9.jpg"
+            src="./images/item-4.webp"
+            loading="lazy"
             alt="Food menu item"
             class="object-cover w-full md:h-[600px] lg:w-[1000px]"
             data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
           />
           <img
-            src="./images/dishes/15.jpg"
+            src="./images/item-5.webp"
+            loading="lazy"
             alt="Food menu item"
             class="object-cover w-full md:h-[600px] lg:w-[1000px]"
             data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
           />
           <img
-            src="./images/dishes/20.jpg"
+            src="./images/item-6.webp"
+            loading="lazy"
             alt="Food menu item"
             class="object-cover w-full md:h-[600px] lg:w-[1000px]"
             data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
           />
           <img
-            src="./images/dishes/17.jpg"
+            src="./images/item-7.webp"
+            loading="lazy"
             alt="Food menu item"
             class="object-cover w-full md:h-[600px] lg:w-[1000px]"
             data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
           />
         </div>
       </div>
@@ -546,51 +500,51 @@
           class="flex w-full px-10 py-24 text-xl text-white lg:w-1/2"
         >
           <img
-            src="./images/blue-pattern.png"
+            src="./images/blue-pattern.webp"
             class="absolute -translate-y-40 md:h-screen -left-48 opacity-40"
             alt="blue pattern"
           />
           <div
             class="w-full lg:ml-24 lg:w-2/3 lg:text-justify"
             data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
           >
             <h1
               class="mb-5 text-4xl uppercase lg:text-6xl font-extralight font-sinzel"
             >
-              Restaurant
+              Restaurace
             </h1>
             <p
               class="text-lg text-white font-extralight"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1500"
             >
-              Welcome to Abu, a culinary journey into the heart of the Middle
-              East, right here in Prague. We take pride in serving a diverse
-              menu inspired by the rich traditions of Lebanese, Turkish, and
-              Iraqi cuisines. Our dishes are prepared using authentic recipes
-              passed down through generations, blending aromatic spices and
-              fresh ingredients to create an unforgettable dining experience.
+              Vítejte v Abu, kulinářské výpravě do srdce Blízkého východu přímo
+              v Praze. Jsme hrdí na rozmanité menu inspirované bohatými
+              tradicemi libanonské, turecké a irácké kuchyně. Naše pokrmy
+              připravujeme podle autentických receptů předávaných z generace na
+              generaci, ve kterých se mísí aromatické koření a čerstvé suroviny,
+              aby vznikl nezapomenutelný kulinářský zážitek.
             </p>
             <br />
             <p
               class="text-lg text-white font-extralight"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1500"
             >
-              At Abu, we aim to transport you to a world of warm hospitality,
-              vibrant flavors, and timeless traditions. Whether you’re joining
-              us for a casual meal, a family gathering, or a special
-              celebration, we promise a truly unique and flavorful experience.
+              V Abu, se snažíme přenést vás do světa pohostinnosti, živých chutí
+              a nadčasových tradic. Ať už se k nám chystáte na běžné jídlo,
+              rodinnou oslavu nebo speciální oslavu, slibujeme vám skutečně
+              jedinečný a chutný zážitek.
             </p>
             <br /><br />
             <p
               class="text-base uppercase border-b border-b-yellow-300"
               data-aos="fade-right"
-              data-aos-duration="2000"
+              data-aos-duration="1500"
             >
               <a href="./coming-soon.html" target="_blank"
-                >Our Resturant Menu</a
+                >Naše restaurace Menu</a
               >
             </p>
           </div>
@@ -598,11 +552,12 @@
         <div
           id="right"
           class="w-full lg:w-1/2"
-          data-aos="fade-left"
-          data-aos-duration="2000"
+          data-aos="fade-in"
+          data-aos-duration="1500"
         >
           <img
-            src="./images/inside-new-1.jpg"
+            src="./images/new-8.webp"
+            loading="lazy"
             alt="Image of the restaurant interior"
             class="z-10 object-cover lg:h-screen"
           />
@@ -614,11 +569,12 @@
         <div
           id="left2"
           class="z-20 w-full lg:w-1/2"
-          data-aos="fade-right"
-          data-aos-duration="2000"
+          data-aos="fade-in"
+          data-aos-duration="1500"
         >
           <img
-            src="./images/new-bar-2.jpg"
+            src="./images/new-bar-2.webp"
+            loading="lazy"
             alt="Image of some drinks served on the bar"
             class="z-20 object-cover lg:h-screen"
           />
@@ -626,11 +582,11 @@
         <div
           id="right2"
           class="w-full px-10 py-24 text-xl text-white lg:w-1/2"
-          data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos="fade-in"
+          data-aos-duration="1500"
         >
           <img
-            src="./images/blue-pattern.png"
+            src="./images/blue-pattern.webp"
             class="absolute -translate-y-40 md:h-screen -z-10 -right-48 opacity-40"
             alt="blue pattern"
           />
@@ -638,39 +594,42 @@
             <h1
               class="mb-5 text-4xl uppercase lg:text-6xl font-extralight font-sinzel"
             >
-              The bar
+              Bar
             </h1>
             <p
               class="text-lg text-white font-extralight"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1500"
             >
-              Welcome to Abu Bar, where the spirit of the Middle East meets the
-              vibrant nightlife of Prague. Our bar offers an exquisite selection
-              of handcrafted cocktails, premium wines, and traditional Middle
-              Eastern beverages, all carefully curated to complement our
-              cuisine. Enjoy classic favorites like Arak, Turkish Raki, or our
-              signature cocktails infused with exotic spices and flavors.
+              Vítejte v Abu Baru, kde se duch Blízkého východu snoubí s energií
+              pulzujícího pražského nočního života. Náš bar nabízí široký výběr
+              ručně vyráběných koktejlů, prvotřídních vín a tradičních
+              blízkovýchodních nápojů, které jsou pečlivě vybírány tak, aby
+              dokonale ladily s naší středomořskou kuchyní. Vyzkoušejte klasické
+              nápoje, jako je turecké raki, nebo naše originální koktejly
+              obohacené exotickým kořením a chutěmi.
             </p>
             <br />
             <p
               class="text-lg text-white font-extralight"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1500"
             >
-              With a cozy, stylish ambiance, Abu Bar is the perfect place to
-              unwind, socialize, or start your evening. Whether you’re enjoying
-              a drink before dinner, gathering with friends, or looking for a
-              unique night out, we offer an unforgettable experience with every
-              sip.
+              Útulné a stylové prostředí Abu Baru je ideálním místem pro
+              relaxaci, setkání s přáteli nebo zahájení večera. Ať už si přejete
+              vychutnat drink před večeří, strávit příjemný čas s blízkými nebo
+              zažít jedinečný večer, u nás vás čeká nezapomenutelný zážitek s
+              každým douškem.
             </p>
             <br /><br />
             <p
               class="text-base uppercase border-b border-b-yellow-300"
               data-aos="fade-left"
-              data-aos-duration="2000"
+              data-aos-duration="1500"
             >
-              <a href="./coming-soon.html" target="_blank">Our Bar Menu</a>
+              <a href="./coming-soon.html" target="_blank"
+                >Náš nápojový lístek</a
+              >
             </p>
           </div>
         </div>
@@ -686,10 +645,10 @@
           id="left3"
           class="flex w-full px-10 py-24 text-xl text-white lg:w-1/2"
           data-aos="fade-left"
-          data-aos-duration="2000"
+          data-aos-duration="1500"
         >
           <img
-            src="./images/blue-pattern.png"
+            src="./images/blue-pattern.webp"
             class="absolute -translate-y-40 md:h-screen -left-48 opacity-40"
             alt="blue pattern"
           />
@@ -697,19 +656,19 @@
             <h1
               class="mb-10 text-4xl uppercase lg:mb-5 lg:text-6xl font-extralight font-sinzel"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1500"
             >
-              Reservations
+              Rezervace
             </h1>
             <div
               class="text-white font-extralight"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1500"
             >
               <p
                 class="text-lg text-white font-extralight"
                 data-aos="fade-up"
-                data-aos-duration="2000"
+                data-aos-duration="1500"
               >
                 <span class="flex items-center gap-3 mb-1 text-xl"
                   ><svg
@@ -726,7 +685,7 @@
                       d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
                     />
                   </svg>
-                  Book Online</span
+                  Rezervujte online</span
                 >
                 <span
                   class="block mb-5 transition-all duration-200 ease-in-out hover:text-red-300"
@@ -752,11 +711,11 @@
                       d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
                     />
                   </svg>
-                  Booking On Call</span
+                  Rezervace na telefonu</span
                 >
                 <span
                   class="block mb-5 transition-all duration-200 ease-in-out hover:text-red-300"
-                  ><a href="tel:+420 722447501">+420 722447501</a></span
+                  ><a href="tel:+420 734706030">+420 734706030</a></span
                 >
                 <span class="flex items-center gap-3 mb-1 text-xl">
                   <svg
@@ -773,11 +732,11 @@
                       d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
                     />
                   </svg>
-                  Book Via Whatsapp</span
+                  Rezervace na WhatsApp</span
                 >
                 <span
                   class="block mb-5 transition-all duration-200 ease-in-out hover:text-red-300"
-                  ><a href="https://wa.me/420722447501">+420 722447501</a></span
+                  ><a href="https://wa.me/420734706030">+420 734706030</a></span
                 >
                 <span class="flex items-center gap-3 mb-1 text-xl">
                   <svg
@@ -794,7 +753,7 @@
                       d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
                     />
                   </svg>
-                  Book With Email</span
+                  Rezervace e-mailem</span
                 >
                 <span
                   class="block mb-5 transition-all duration-200 ease-in-out hover:text-red-300"
@@ -820,25 +779,28 @@
                       d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
                     />
                   </svg>
-                  Opening times
+                  Provozní doba
                 </div>
-                MONDAY: 09:00 - 21:00 <br />
-                TUESDAY: 09:00 - 21:00 <br />
-                WEDNESDAY: 09:00 - 21:00 <br />
-                THURSDAY: 09:00 - 21:00 <br />
-                FRIDAY: 09:00 - 21:00 <br />
-                SATURDAY: 09:00 - 21:00 <br />
-                SUNDAY: 09:00 - 21:00
+                PONDĚLÍ: 09:00 - 21:00 HOD. <br />
+                ÚTERÝ: 09:00 - 21:00 HOD. <br />
+                STŘEDA: 09:00 - 21:00 HOD. <br />
+                ČTVRTEK: 09:00 - 21:00 HOD. <br />
+                PÁTEK: 09:00 - 21:00 HOD. <br />
+                SOBOTA: 09:00 - 21:00 HOD. <br />
+                NEDĚLE: 09:00 - 21:00 HOD.
               </div>
               <br />
 
               <p
                 class="text-base uppercase border-b border-b-yellow-300"
                 data-aos="fade-right"
-                data-aos-duration="2000"
+                data-aos-duration="1500"
               >
-                <a href="https://forms.office.com/r/RkPkdUdeQX" target="_blank"
-                  >BOOK A TABLE</a
+                <a
+                  href="https://forms.office.com/r/RkPkdUdeQX"
+                  target="_blank"
+                  class="font-medium"
+                  >Rezervujte si stůl</a
                 >
               </p>
             </div>
@@ -846,11 +808,12 @@
         </div>
         <div
           class="w-full lg:w-1/2 md:h-screen"
-          data-aos="fade-left"
-          data-aos-duration="2000"
+          data-aos="fade-up"
+          data-aos-duration="1500"
         >
           <img
-            src="./images/new-8.jpg"
+            src="./images/fountain.webp"
+            loading="lazy"
             alt="An artistic photo of the table-tops"
             class="object-cover lg:h-screen"
           />
@@ -863,7 +826,7 @@
         <div
           class="z-20 w-full lg:w-1/2"
           data-aos="fade-right"
-          data-aos-duration="2000"
+          data-aos-duration="1500"
         >
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2230.512618550809!2d14.429579079291084!3d50.07526671783471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b950051294a21%3A0xaae216afb1272d7d!2sAbu%20Restaurant!5e1!3m2!1sen!2scz!4v1727554213851!5m2!1sen!2scz"
@@ -879,21 +842,21 @@
         <div class="w-full px-10 py-24 text-xl text-white lg:w-1/2">
           <div class="w-full lg:ml-24 lg:w-2/3 lg:text-justify">
             <img
-              src="./images/blue-pattern.png"
+              src="./images/blue-pattern.webp"
               class="absolute -translate-y-40 lg:h-screen -right-48 opacity-40"
               alt="blue pattern"
             />
             <h1
               class="text-4xl uppercase mb-14 lg:text-6xl font-extralight font-sinzel"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1500"
             >
-              Contact us
+              Kontaktujte nás
             </h1>
             <p
               class="text-lg text-white font-extralight"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1500"
             >
               <span class="flex items-center gap-3 mb-1 text-xl"
                 ><svg
@@ -910,7 +873,7 @@
                     d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
                   />
                 </svg>
-                Address</span
+                Adresa</span
               >
               <span
                 class="transition-all duration-200 ease-in-out hover:text-red-300"
@@ -927,7 +890,7 @@
             <p
               class="text-lg text-white font-extralight"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1500"
             >
               <!-- <span class="flex items-center gap-3 mb-1 text-xl"
                 ><svg
@@ -970,11 +933,11 @@
                     d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
                   />
                 </svg>
-                Call</span
+                Na telefonu</span
               >
               <span
                 class="block mb-5 transition-all duration-200 ease-in-out hover:text-red-300"
-                ><a href="tel:+420 722447501">+420 722447501</a></span
+                ><a href="tel:+420 734706030">+420 734706030</a></span
               >
               <span class="flex items-center gap-3 mb-1 text-xl">
                 <svg
@@ -991,11 +954,11 @@
                     d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
                   />
                 </svg>
-                Whatsapp</span
+                Na Whatsapp</span
               >
               <span
                 class="block mb-5 transition-all duration-200 ease-in-out hover:text-red-300"
-                ><a href="https://wa.me/420722447501">+420 722447501</a></span
+                ><a href="https://wa.me/420734706030">+420 734706030</a></span
               >
               <span class="flex items-center gap-3 mb-1 text-xl">
                 <svg
@@ -1012,7 +975,7 @@
                     d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
                   />
                 </svg>
-                Email</span
+                Na e-mail</span
               >
               <span
                 class="block mb-5 transition-all duration-200 ease-in-out hover:text-red-300"
@@ -1025,13 +988,13 @@
             <p
               class="text-base uppercase transition-all duration-200 ease-in-out border-b border-b-yellow-300 hover:text-red-300"
               data-aos="fade-left"
-              data-aos-duration="2000"
+              data-aos-duration="1500"
             >
               <a
                 href="https://maps.app.goo.gl/fBPFLwtUaCqVedfw9"
                 target="_blank"
                 class="cursor-pointer"
-                >Visit us</a
+                >Navštivte nás</a
               >
             </p>
           </div>
@@ -1180,7 +1143,7 @@
             <ul class="mt-6 space-y-4 text-sm">
               <li>
                 <a href="#" class="text-gray-200 transition hover:opacity-75">
-                  Our Menu
+                  Our menu
                 </a>
               </li>
 
@@ -1283,15 +1246,13 @@
           </div>
         </div>
 
-        <div class="flex flex-col justify-between w-full pt-5 lg:flex-row">
-          <p class="text-xs text-white">
-            &copy; 2024. Abu Restaurant. All rights reserved.
+       <div class="flex flex-col justify-between w-full pt-5 lg:flex-row">
+          <p class="text-xs text-white uppercase">
+            © 2024. Abu Restaurant. All rights reserved.
           </p>
-          <p class="mt-3 text-xs text-white">
+          <p class="mt-3 text-xs text-white uppercase">
             Designed by:
-            <a href="https://www.instagram.com/aveek.patra/" target="_blank"
-              >@aveek.patra</a
-            >
+            <a href="https://www.instagram.com/aveek.patra/" target="_blank">@aveek.patra</a>
           </p>
         </div>
       </div>
@@ -1301,18 +1262,4 @@
   <script defer>
     AOS.init();
   </script>
-
-  <!-- <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement(
-        { pageLanguage: "en" },
-        "google_translate_element"
-      );
-    }
-  </script>
-  <script
-    type="text/javascript"
-    defer
-    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-  ></script>
---></html>
+</html>

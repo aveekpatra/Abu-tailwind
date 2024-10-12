@@ -12,11 +12,13 @@ window.addEventListener("load", function () {
 });
 
 // JavaScript to toggle the menu and navbar
+const navbar = document.getElementById("topbar");
 const menuButton = document.getElementById("ham-menu");
 const navlinks = document.getElementById("nav-links");
 const body = document.body;
 menuButton.addEventListener("click", () => {
   menuButton.classList.toggle("ham-clicked");
+  navbar.classList.remove("bg-transparent");
 
   if (window.innerWidth < 900) {
     if (navlinks.style.height == "100vh") {
@@ -43,3 +45,14 @@ logo = document.getElementById("logo-main");
 logo.addEventListener("click", () => {
   document.location.reload(true);
 });
+
+// navbar color change on scroll
+window.onscroll = function () {
+  if (window.scrollY > 0) {
+    navbar.classList.remove("bg-transparent");
+    navbar.classList.add("shadow-md");
+  } else {
+    navbar.classList.add("bg-transparent");
+    navbar.classList.remove("shadow-md");
+  }
+};
